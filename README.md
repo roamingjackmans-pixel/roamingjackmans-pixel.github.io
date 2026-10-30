@@ -2,7 +2,7 @@
 
 Home page for josephjackman.com, served by GitHub Pages from the `main` branch.
 
-- `index.html`: landing page with a link to Whisker Wars
+- `index.html`: landing page with a card for each game (Whisker Wars, The Infinite Hive)
 - `whisker-wars/`: redirect from the game's old address to `/whiskerwars/`
 - `infinitehive/`: The Infinite Hive, an incremental game in one self-contained page (served at `/infinitehive/`).
   It is built by the game's own `node build.mjs`; to update it, copy the new build over `infinitehive/index.html`.

@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Whisker Wars | josephjackman.com</title>
-<meta name="description" content="Home of Whisker Wars, a real-time cat-kingdom strategy game you can play with friends in the browser.">
-<meta property="og:title" content="Whisker Wars">
-<meta property="og:description" content="Real-time cat-kingdom strategy battles. Send a friend a room code and fight it out.">
+<title>Whisker Wars &amp; The Infinite Hive | josephjackman.com</title>
+<meta name="description" content="Browser games by Joseph Jackman: Whisker Wars, real-time cat-kingdom battles with friends, and The Infinite Hive, an incremental game about bees that grow from one hive to the whole galaxy.">
+<meta property="og:title" content="Whisker Wars &amp; The Infinite Hive">
+<meta property="og:description" content="Real-time cat-kingdom battles with friends, and an incremental bee empire that spans the galaxy.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,22 +71,44 @@
   li { padding: 6px 0; border-top: 1px dashed #e6d9ca; }
   li b { color: var(--ink); font-weight: 600; }
   footer { margin-top: 20px; font-size: 13px; color: #a893c0; }
+  /* the game cards: side by side when there's room, stacked on phones */
+  .games { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 24px; width: 100%; }
+  .games .card { flex: 1 1 340px; display: flex; flex-direction: column; align-items: center; }
+  .games .card ul { width: 100%; }
+  .games .card .tag { flex: 1 0 auto; }   /* longer taglines push nothing out of line: the buttons stay level */
+  .games .card .hero { align-self: stretch; white-space: nowrap; font-size: clamp(52px, 17vw, 72px); }   /* three emoji, one row */
+  .hive .play { background: #ffb120; color: #3a2405; box-shadow: 0 5px 0 #c27c0e; }
+  .hive .play:hover { box-shadow: 0 7px 0 #c27c0e; }
+  .hive .play:active { box-shadow: 0 2px 0 #c27c0e; }
   @media (prefers-reduced-motion: reduce) { .hero span { animation: none; } }
 </style>
 </head>
 <body>
   <p class="site">josephjackman.com</p>
-  <main class="card">
-    <div class="hero" aria-hidden="true"><span>😼</span><span>🏰</span><span>😾</span></div>
-    <h1>Whisker Wars</h1>
-    <p class="tag">Real-time cat kingdom battles. Send a friend a room code and fight it out.</p>
-    <a class="play" href="whiskerwars/">Play now</a>
-    <ul>
-      <li><b>1v1 online</b>: share a 5-letter code, no sign-up</li>
-      <li><b>12 cat heroes</b> with 36 silly spells</li>
-      <li><b>Campaign and practice</b> against computer cats</li>
-    </ul>
+  <main class="games">
+    <section class="card">
+      <div class="hero" aria-hidden="true"><span>😼</span><span>🏰</span><span>😾</span></div>
+      <h1>Whisker Wars</h1>
+      <p class="tag">Real-time cat kingdom battles. Send a friend a room code and fight it out.</p>
+      <a class="play" href="whiskerwars/">Play now</a>
+      <ul>
+        <li><b>1v1 online</b>: share a 5-letter code, no sign-up</li>
+        <li><b>12 cat heroes</b> with 36 silly spells</li>
+        <li><b>Campaign and practice</b> against computer cats</li>
+      </ul>
+    </section>
+    <section class="card hive">
+      <div class="hero" aria-hidden="true"><span>🐝</span><span>🍯</span><span>🌌</span></div>
+      <h1>The Infinite Hive</h1>
+      <p class="tag">An incremental game. Grow one backyard hive into a swarm that covers the Earth, then the galaxy.</p>
+      <a class="play" href="infinitehive/">Play now</a>
+      <ul>
+        <li><b>Three phases</b>: backyard, planet, galaxy</li>
+        <li><b>Real-time space battles</b>, a casino and a stock exchange</li>
+        <li><b>Saves in your browser</b>, no sign-up</li>
+      </ul>
+    </section>
   </main>
-  <footer>Works on desktop and phone browsers</footer>
+  <footer>Play in any desktop or phone browser</footer>
 </body>
 </html>
