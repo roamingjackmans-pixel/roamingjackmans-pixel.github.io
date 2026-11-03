@@ -3,171 +3,1302 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alt Whisker Wars, The Infinite Hive, Horse Race, The Deck, Lieage &amp; Roleplay20 | josephjackman.com</title>
-<meta name="description" content="Browser games by Joseph Jackman: Alt Whisker Wars, real-time cat-kingdom battles with friends, hidden armies, levelled hero skills and army morale; The Infinite Hive, an incremental game about bees that grow from one hive to the whole galaxy; Horse Race, a silly online betting party game with friends; The Deck, a drinking card game for parties; Lieage, a bluffing trivia party game played on a big screen and your phones; and Roleplay20, Dungeons &amp; Dragons with an AI Dungeon Master.">
-<meta property="og:title" content="Alt Whisker Wars, The Infinite Hive, Horse Race, The Deck, Lieage &amp; Roleplay20">
-<meta property="og:description" content="Real-time cat-kingdom battles with friends, an incremental bee empire that spans the galaxy, a silly horse racing party game, a drinking card game for parties, a bluffing trivia party game, and Dungeons &amp; Dragons with an AI Dungeon Master.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>">
+<title>Joe Jackman · Business Growth Executive &amp; AI Systems Designer</title>
+<meta name="description" content="Joe Jackman: business growth executive, Lean Six Sigma Black Belt and AI harness designer in Chicago. I find the bottleneck, build the system around it, and put AI in the loop with the specs, guardrails and checks that make it trustworthy.">
+<link rel="canonical" href="https://josephjackman.com/">
+<meta name="theme-color" content="#0b0c0f">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://josephjackman.com/">
+<meta property="og:title" content="Joe Jackman turns chaos into flow">
+<meta property="og:description" content="Business growth executive, Lean Six Sigma Black Belt and AI harness designer: operations that run on systems, automation and AI with a human in the loop.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23ffc933'/><text x='32' y='43' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='28' text-anchor='middle' fill='%230b0c0f'>JJ</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Joe Jackman",
+  "url": "https://josephjackman.com/",
+  "jobTitle": "Director of Pricing and Procurement",
+  "worksFor": { "@type": "Organization", "name": "Marketing Impact Limited" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Chicago", "addressRegion": "IL", "addressCountry": "US" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Vermont" },
+  "knowsAbout": ["Lean Six Sigma", "Continuous improvement", "Operations management", "Business automation", "AI agent harness design"]
+}
+</script>
 <style>
   :root {
-    --bg: #2b1d3a;
-    --bg-2: #43295c;
-    --card: #fff8ee;
-    --ink: #3a2a48;
-    --muted: #7a6a88;
-    --accent: #ff6fa3;
-    --accent-dark: #d94c82;
-    --gold: #ffcf5a;
+    --bg: #0b0c0f;
+    --bg-2: #0f1115;
+    --panel: #13161c;
+    --panel-2: #191d25;
+    --line: rgba(236, 233, 224, .08);
+    --line-2: rgba(236, 233, 224, .16);
+    --grid: rgba(236, 233, 224, .045);
+    --text: #eceae3;
+    --soft: #c9c8c1;
+    --muted: #9a9ba3;
+    --dim: #6f717a;
+    --yellow: #ffc933;
+    --cyan: #5fe0ff;
+    --violet: #b79cff;
+    --coral: #ff7a5c;
+    --green: #74e6a6;
+    --radius: 18px;
+    --max: 1200px;
+    --gutter: clamp(16px, 4vw, 36px);
+    --sans: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+    color-scheme: dark;
   }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; min-height: 100%; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: 72px; }
   body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 32px 16px;
-    font-family: 'Fredoka', system-ui, sans-serif;
-    color: var(--card);
-    background: radial-gradient(ellipse at top, var(--bg-2), var(--bg) 70%);
+    margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans);
+    font-size: 17px; line-height: 1.6; overflow-x: clip; -webkit-font-smoothing: antialiased;
   }
-  .site { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; color: #cdb8e6; margin: 0 0 20px; }
-  .card {
-    width: 100%;
-    max-width: 440px;
-    background: var(--card);
-    color: var(--ink);
-    border-radius: 28px;
-    padding: 32px 28px 28px;
-    text-align: center;
-    box-shadow: 0 18px 50px rgba(0, 0, 0, .35);
+  body::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000, transparent 80%);
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000, transparent 80%);
   }
-  .hero { font-size: 72px; line-height: 1; margin-bottom: 8px; }
-  .hero span { display: inline-block; animation: bob 2.4s ease-in-out infinite; }
-  .hero span:nth-child(2) { animation-delay: .3s; }
-  .hero span:nth-child(3) { animation-delay: .6s; }
-  @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-  h1 { font-size: 40px; margin: 6px 0 4px; font-weight: 700; }
-  .tag { color: var(--muted); font-size: 17px; margin: 0 0 24px; line-height: 1.4; }
-  .play {
-    display: inline-block;
-    background: var(--accent);
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 22px;
-    padding: 14px 40px;
-    border-radius: 999px;
-    box-shadow: 0 5px 0 var(--accent-dark);
-    transition: transform .1s, box-shadow .1s;
+  ::selection { background: var(--yellow); color: var(--bg); }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 6px; }
+  .wrap { position: relative; z-index: 1; width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+  section { position: relative; z-index: 1; padding: clamp(72px, 8.5vw, 124px) 0; }
+  .print-only { display: none; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* type */
+  .kicker {
+    display: flex; align-items: center; gap: 14px; margin: 0;
+    font-family: var(--mono); font-size: 12.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--yellow);
   }
-  .play:hover { transform: translateY(-2px); box-shadow: 0 7px 0 var(--accent-dark); }
-  .play:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--accent-dark); }
-  ul { list-style: none; padding: 0; margin: 24px 0 0; text-align: left; font-size: 15px; color: var(--muted); }
-  li { padding: 6px 0; border-top: 1px dashed #e6d9ca; }
-  li b { color: var(--ink); font-weight: 600; }
-  footer { margin-top: 20px; font-size: 13px; color: #a893c0; }
-  /* the game cards: side by side when there's room, stacked on phones */
-  .games { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 24px; width: 100%; }
-  .games .card { flex: 1 1 340px; display: flex; flex-direction: column; align-items: center; }
-  .games .card ul { width: 100%; }
-  .games .card .tag { flex: 1 0 auto; }   /* longer taglines push nothing out of line: the buttons stay level */
-  .games .card .hero { align-self: stretch; white-space: nowrap; font-size: clamp(52px, 17vw, 72px); }   /* three emoji, one row */
-  .alt .play { background: #1fb4c4; box-shadow: 0 5px 0 #13808c; }
-  .alt .play:hover { box-shadow: 0 7px 0 #13808c; }
-  .alt .play:active { box-shadow: 0 2px 0 #13808c; }
-  .hive .play { background: #ffb120; color: #3a2405; box-shadow: 0 5px 0 #c27c0e; }
-  .hive .play:hover { box-shadow: 0 7px 0 #c27c0e; }
-  .hive .play:active { box-shadow: 0 2px 0 #c27c0e; }
-  .race .play { background: #1f9a48; box-shadow: 0 5px 0 #13652f; }
-  .race .play:hover { box-shadow: 0 7px 0 #13652f; }
-  .race .play:active { box-shadow: 0 2px 0 #13652f; }
-  .deck .play { background: #428bca; box-shadow: 0 5px 0 #2a5f93; }
-  .deck .play:hover { box-shadow: 0 7px 0 #2a5f93; }
-  .deck .play:active { box-shadow: 0 2px 0 #2a5f93; }
-  .lie .play { background: #8a4dff; box-shadow: 0 5px 0 #5e2fc0; }
-  .lie .play:hover { box-shadow: 0 7px 0 #5e2fc0; }
-  .lie .play:active { box-shadow: 0 2px 0 #5e2fc0; }
-  .rp20 .play { background: #b8322a; box-shadow: 0 5px 0 #7e1f19; }
-  .rp20 .play:hover { box-shadow: 0 7px 0 #7e1f19; }
-  .rp20 .play:active { box-shadow: 0 2px 0 #7e1f19; }
-  @media (prefers-reduced-motion: reduce) { .hero span { animation: none; } }
+  .kicker::after { content: ""; flex: 0 0 72px; height: 1px; background: currentColor; opacity: .45; }
+  h2 {
+    font-stretch: 118%; font-weight: 800; font-size: clamp(36px, 5.6vw, 72px); line-height: 1; letter-spacing: -.025em;
+    margin: 20px 0 20px; max-width: 17ch; text-wrap: balance;
+  }
+  h2 .alt { color: var(--muted); font-weight: 500; }
+  .intro { margin: 0; max-width: 64ch; color: var(--muted); font-size: clamp(17px, 1.6vw, 19.5px); }
+  h3 { margin: 0; font-weight: 700; letter-spacing: -.01em; line-height: 1.2; }
+  .mono { font-family: var(--mono); }
+
+  /* buttons */
+  .btn, .btn-ghost {
+    display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 999px;
+    font: inherit; font-weight: 700; font-size: 16px; line-height: 1; text-decoration: none; cursor: pointer;
+    transition: transform .18s, box-shadow .25s, background .2s, border-color .2s;
+  }
+  .btn { background: var(--yellow); color: #0b0c0f; border: 1px solid var(--yellow); }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 14px 34px -10px rgba(255, 201, 51, .6); }
+  .btn-ghost { background: rgba(11, 12, 15, .5); color: var(--text); border: 1px solid var(--line-2); }
+  .btn-ghost:hover { border-color: var(--text); transform: translateY(-2px); }
+  .btn svg, .btn-ghost svg { width: 16px; height: 16px; }
+  .btn-sm { padding: 9px 14px; font-size: 13.5px; }
+
+  /* nav */
+  .takt { position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 60; pointer-events: none; }
+  .takt i { display: block; height: 100%; background: linear-gradient(90deg, var(--yellow), var(--cyan)); transform-origin: 0 50%; transform: scaleX(0); }
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50; display: flex; align-items: center; gap: 16px;
+    padding: 12px var(--gutter); border-bottom: 1px solid transparent; transition: background .3s, border-color .3s, backdrop-filter .3s;
+  }
+  .nav.scrolled { background: rgba(11, 12, 15, .74); -webkit-backdrop-filter: blur(14px) saturate(150%); backdrop-filter: blur(14px) saturate(150%); border-color: var(--line); }
+  .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; font-weight: 700; font-stretch: 112%; white-space: nowrap; }
+  .badge {
+    width: 34px; height: 34px; border-radius: 10px; background: var(--yellow); color: #0b0c0f;
+    display: grid; place-items: center; font-weight: 900; font-size: 14px; letter-spacing: -.04em; font-stretch: 100%;
+  }
+  .nav nav { display: flex; gap: 2px; margin-left: auto; }
+  .nav nav a { color: var(--muted); text-decoration: none; font-size: 14.5px; padding: 8px 13px; border-radius: 999px; transition: color .2s, background .2s; }
+  .nav nav a:hover, .nav nav a.on { color: var(--text); background: rgba(255, 255, 255, .07); }
+  .nav-actions { display: flex; gap: 8px; align-items: center; }
+  .kbd-btn {
+    font: 500 12px/1 var(--mono); color: var(--muted); background: transparent; border: 1px solid var(--line-2);
+    border-radius: 8px; padding: 9px 10px; cursor: pointer; transition: color .2s, border-color .2s;
+  }
+  .kbd-btn:hover { color: var(--text); border-color: var(--text); }
+  @media (max-width: 900px) { .nav nav { display: none; } .nav-actions { margin-left: auto; } }
+  @media (max-width: 420px) { .brand .brand-name { display: none; } }
+
+  /* hero */
+  .hero { min-height: 100vh; min-height: 100svh; display: flex; align-items: center; padding: 124px 0 96px; overflow: hidden; }
+  #flow { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .hero::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background:
+      linear-gradient(90deg, rgba(11, 12, 15, .93) 0%, rgba(11, 12, 15, .7) 34%, rgba(11, 12, 15, .12) 64%, rgba(11, 12, 15, 0) 100%),
+      linear-gradient(0deg, var(--bg) 0%, rgba(11, 12, 15, 0) 22%);
+  }
+  .hero .wrap { z-index: 2; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px; margin: 0; padding: 8px 14px 8px 12px;
+    font-family: var(--mono); font-size: 12.5px; letter-spacing: .04em; color: var(--soft);
+    border: 1px solid var(--line-2); border-radius: 999px; background: rgba(11, 12, 15, .65);
+  }
+  .live { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--green); animation: pulse 2.2s infinite; }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(116, 230, 166, .55); } 70%, 100% { box-shadow: 0 0 0 10px rgba(116, 230, 166, 0); } }
+  .display { margin: 26px 0 26px; font-weight: 850; line-height: .9; letter-spacing: -.035em; }
+  .display .l1 { display: block; font-stretch: 125%; font-size: clamp(50px, 8.4vw, 138px); }
+  .display .l2 { display: block; margin-top: .3em; font-stretch: 108%; font-weight: 500; font-size: clamp(28px, 4.2vw, 62px); letter-spacing: -.02em; color: var(--soft); }
+  .display em { font-style: italic; font-weight: 800; color: var(--yellow); }
+  .lede { margin: 0; max-width: 54ch; color: var(--soft); font-size: clamp(17px, 1.7vw, 20px); }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+  .sigma {
+    position: absolute; right: var(--gutter); bottom: 0; width: 248px; padding: 16px 18px 14px;
+    font-family: var(--mono); font-size: 12px; border: 1px solid var(--line-2); border-radius: 16px;
+    background: rgba(15, 17, 21, .74); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  }
+  .sigma-top { display: flex; justify-content: space-between; color: var(--muted); letter-spacing: .14em; }
+  .sigma-top b { color: var(--green); font-weight: 500; }
+  .sigma-value { margin: 6px 0 10px; font-family: var(--sans); font-stretch: 125%; font-weight: 800; font-size: 58px; line-height: 1; color: var(--yellow); font-variant-numeric: tabular-nums; }
+  .sigma-value small { font-size: 24px; color: var(--muted); font-weight: 600; margin-left: 4px; }
+  .sigma-row { display: flex; justify-content: space-between; padding: 7px 0; border-top: 1px dashed var(--line-2); color: var(--muted); }
+  .sigma-row span:last-child { color: var(--text); font-variant-numeric: tabular-nums; }
+  .sigma-hint { margin: 10px 0 0; color: var(--dim); line-height: 1.45; }
+  @media (max-width: 1080px) {
+    .sigma { position: relative; right: auto; bottom: auto; margin-top: 40px; width: 100%; max-width: 360px; }
+    .hero::after { background: linear-gradient(180deg, rgba(11, 12, 15, .5) 0%, rgba(11, 12, 15, .78) 45%, var(--bg) 100%); }
+  }
+
+  /* ticker */
+  .ticker { position: relative; z-index: 1; border-block: 1px solid var(--line); overflow: hidden; padding: 18px 0; background: var(--bg); }
+  .ticker-track { display: flex; width: max-content; animation: slide 46s linear infinite; }
+  .ticker span { display: inline-flex; align-items: center; gap: 28px; padding-right: 28px; white-space: nowrap; font-stretch: 112%; font-weight: 600; font-size: 18px; color: var(--muted); }
+  .ticker span::after { content: ""; width: 7px; height: 7px; background: var(--yellow); transform: rotate(45deg); opacity: .8; }
+  @keyframes slide { to { transform: translateX(-50%); } }
+
+  /* reveal on scroll (only when JS runs, so nothing hides without it) */
+  .js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s cubic-bezier(.2, .7, .2, 1), transform .8s cubic-bezier(.2, .7, .2, 1); }
+  .js .reveal.in { opacity: 1; transform: none; }
+  html:not(.js) .bar span { width: var(--w); }
+  html:not(.js) .cols i { height: var(--h); }
+  html:not(.js) .gauge .g-fg { stroke-dashoffset: 14.45; }
+  html:not(.js) .spark .ln { stroke-dashoffset: 0; }
+
+  /* impact */
+  .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 56px; }
+  @media (max-width: 1080px) { .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 600px) { .metrics { grid-template-columns: 1fr; } }
+  .metric {
+    position: relative; display: flex; flex-direction: column; min-height: 330px; padding: 22px 22px 20px;
+    background: linear-gradient(180deg, var(--panel-2), var(--panel)); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+  }
+  .metric:nth-child(2) { transition-delay: .08s; } .metric:nth-child(3) { transition-delay: .16s; } .metric:nth-child(4) { transition-delay: .24s; }
+  .m-tag { font-family: var(--mono); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); }
+  .m-big { margin: 16px 0 8px; font-stretch: 122%; font-weight: 850; font-size: clamp(40px, 3.9vw, 56px); line-height: 1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .m-big .from { display: block; margin-bottom: 10px; font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .m-big .from::after { content: " →"; color: var(--yellow); }
+  .m-cap { margin: 0; color: var(--soft); font-size: 15.5px; line-height: 1.45; }
+  .viz { margin-top: auto; padding-top: 22px; }
+  .bar { margin-top: 12px; }
+  .bar em { display: block; margin-bottom: 6px; font: 500 11.5px/1 var(--mono); font-style: normal; color: var(--muted); }
+  .bar span { display: block; height: 10px; border-radius: 99px; width: 0; transition: width 1.4s cubic-bezier(.2, .7, .2, 1) .35s; }
+  .bar.before span { background: linear-gradient(90deg, rgba(255, 122, 92, .55), var(--coral)); }
+  .bar.after span { background: var(--yellow); box-shadow: 0 0 18px rgba(255, 201, 51, .6); }
+  .in .bar span { width: var(--w); }
+  .cols { display: flex; align-items: flex-end; gap: 6px; height: 96px; }
+  .cols i { flex: 1; height: 0; border-radius: 4px 4px 2px 2px; background: rgba(236, 233, 224, .22); transition: height 1s cubic-bezier(.2, .7, .2, 1); }
+  .cols i.up { background: var(--yellow); }
+  .in .cols i { height: var(--h); }
+  .cols-legend { display: flex; justify-content: space-between; margin-top: 8px; font: 500 11.5px/1 var(--mono); color: var(--muted); }
+  .gauge { display: flex; align-items: center; gap: 16px; }
+  .gauge svg { width: 104px; height: 104px; flex: none; transform: rotate(-90deg); }
+  .gauge circle { fill: none; stroke-width: 10; }
+  .gauge .g-bg { stroke: rgba(236, 233, 224, .1); }
+  .gauge .g-fg { stroke: var(--green); stroke-linecap: round; stroke-dasharray: 289.03; stroke-dashoffset: 150.3; transition: stroke-dashoffset 1.8s cubic-bezier(.2, .7, .2, 1) .3s; filter: drop-shadow(0 0 6px rgba(116, 230, 166, .5)); }
+  .in .gauge .g-fg { stroke-dashoffset: 14.45; }
+  .gauge-num { font-stretch: 120%; font-weight: 800; font-size: 30px; line-height: 1; font-variant-numeric: tabular-nums; }
+  .gauge-num small { display: block; margin-top: 6px; font: 500 11.5px/1.3 var(--mono); color: var(--muted); }
+  .spark svg { width: 100%; height: 96px; overflow: visible; }
+  .spark .be { stroke: var(--line-2); stroke-dasharray: 3 5; }
+  .spark .ln { fill: none; stroke: url(#profitGrad); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 320; stroke-dashoffset: 320; transition: stroke-dashoffset 1.8s cubic-bezier(.3, .6, .2, 1) .35s; }
+  .in .spark .ln { stroke-dashoffset: 0; }
+  .spark text { font: 500 10px var(--mono); fill: var(--muted); }
+  .wins { list-style: none; padding: 0; margin: 16px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  @media (max-width: 1080px) { .wins { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 600px) { .wins { grid-template-columns: 1fr; } }
+  .wins li { display: flex; gap: 12px; align-items: flex-start; padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; background: rgba(19, 22, 28, .6); color: var(--soft); font-size: 15px; line-height: 1.45; }
+  .wins li::before { content: ""; flex: none; width: 18px; height: 18px; margin-top: 1px; border-radius: 6px; background: rgba(255, 201, 51, .14) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffc933' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat; }
+
+  /* experience: a value stream of roles */
+  .stream { list-style: none; padding: 0; margin: 64px 0 0; position: relative; }
+  .stream::before {
+    content: ""; position: absolute; left: 12px; top: 10px; bottom: 10px; width: 2px; opacity: .55;
+    background: repeating-linear-gradient(180deg, var(--yellow) 0 10px, transparent 10px 22px); background-size: 2px 22px;
+    animation: conveyor 1.1s linear infinite;
+  }
+  @keyframes conveyor { to { background-position: 0 22px; } }
+  .role { position: relative; padding-left: 52px; margin-bottom: 18px; }
+  .node { position: absolute; left: 4px; top: 30px; width: 18px; height: 18px; border-radius: 50%; background: var(--bg); border: 2px solid var(--yellow); }
+  .role.now .node { background: var(--yellow); box-shadow: 0 0 0 7px rgba(255, 201, 51, .16), 0 0 24px rgba(255, 201, 51, .55); }
+  .role-card {
+    display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 12px 40px; padding: 26px clamp(18px, 3vw, 32px);
+    background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); transition: border-color .3s, background .3s;
+  }
+  .role-card:hover { border-color: var(--line-2); background: var(--panel-2); }
+  @media (max-width: 860px) { .role-card { grid-template-columns: 1fr; } }
+  .when { margin: 0 0 10px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font: 500 12.5px/1 var(--mono); color: var(--muted); letter-spacing: .04em; }
+  .now-tag { padding: 4px 8px; border-radius: 99px; background: rgba(116, 230, 166, .14); color: var(--green); font-size: 11px; letter-spacing: .1em; }
+  .role h3 { font-stretch: 110%; font-size: clamp(20px, 2vw, 24px); }
+  .org { margin: 8px 0 0; color: var(--yellow); font-weight: 600; font-size: 15.5px; }
+  .org span { color: var(--muted); font-weight: 400; }
+  .pts { list-style: none; margin: 0; padding: 0; color: var(--soft); font-size: 15.5px; line-height: 1.5; }
+  .pts li { position: relative; padding: 0 0 9px 20px; break-inside: avoid; }
+  .pts li::before { content: ""; position: absolute; left: 0; top: .72em; width: 9px; height: 2px; background: var(--yellow); }
+  @media (min-width: 1100px) { .pts.two { columns: 2; column-gap: 36px; } }
+
+  /* AI */
+  .ai { background: radial-gradient(ellipse 60% 45% at 78% 22%, rgba(95, 224, 255, .09), transparent 70%), radial-gradient(ellipse 50% 40% at 10% 90%, rgba(183, 156, 255, .07), transparent 70%), var(--bg-2); border-block: 1px solid var(--line); }
+  .ai .kicker { color: var(--cyan); }
+  .ai h2 .cy { color: var(--cyan); }
+  .harness { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 56px); align-items: center; margin-top: 56px; }
+  @media (max-width: 980px) { .harness { grid-template-columns: 1fr; } }
+  .diagram { position: relative; max-width: 560px; width: 100%; margin: 0 auto; }
+  .diagram svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .ring { fill: none; stroke: var(--line-2); stroke-dasharray: 2 7; }
+  .ring-outer { fill: none; stroke: rgba(95, 224, 255, .14); }
+  .ring-text { transform-box: view-box; transform-origin: 260px 260px; animation: spin 60s linear infinite; }
+  .ring-text text { font: 600 11px var(--mono); letter-spacing: .32em; fill: var(--dim); transition: fill .4s; }
+  .ring-text.on text { fill: var(--green); }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .spoke { stroke: rgba(236, 233, 224, .16); stroke-width: 1.5; stroke-dasharray: 3 9; animation: flowdash 1.2s linear infinite; transition: stroke .3s, stroke-width .3s; }
+  .spoke.on { stroke: var(--cyan); stroke-width: 2.5; }
+  @keyframes flowdash { to { stroke-dashoffset: -24; } }
+  .hnode { cursor: pointer; outline: none; }
+  .hnode circle { fill: var(--panel); stroke: var(--line-2); stroke-width: 1.5; transition: fill .3s, stroke .3s, filter .3s; }
+  .hnode text { font: 700 11px var(--mono); letter-spacing: .12em; fill: var(--soft); text-anchor: middle; pointer-events: none; }
+  .hnode text.sm { font-weight: 500; font-size: 9.5px; fill: var(--dim); letter-spacing: .1em; }
+  .hnode:hover circle, .hnode:focus-visible circle { stroke: var(--cyan); }
+  .hnode.on circle { fill: #0f2a33; stroke: var(--cyan); filter: drop-shadow(0 0 14px rgba(95, 224, 255, .55)); }
+  .hnode.on text { fill: var(--cyan); }
+  .hnode.core circle { fill: #10161c; stroke: rgba(95, 224, 255, .5); }
+  .hnode.core.on circle { fill: #0f2a33; }
+  .hnode.core text { font-size: 14px; fill: var(--text); }
+  #packet { fill: var(--cyan); filter: drop-shadow(0 0 6px var(--cyan)); opacity: 0; }
+  .harness-side { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+  .detail { min-height: 236px; padding: 24px 24px 22px; border: 1px solid var(--line-2); border-radius: var(--radius); background: rgba(19, 22, 28, .78); }
+  .d-k { margin: 0; font: 500 11.5px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--cyan); }
+  .detail h3 { margin: 12px 0 10px; font-stretch: 112%; font-size: 24px; }
+  .detail p { margin: 0; color: var(--soft); font-size: 15.5px; line-height: 1.55; }
+  .detail .d-ex { margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--line-2); color: var(--muted); font-size: 14.5px; }
+  .detail .d-ex b { color: var(--text); font-weight: 600; }
+  .detail code { font-family: var(--mono); font-size: .9em; color: var(--cyan); }
+  .term { border: 1px solid var(--line-2); border-radius: 14px; background: #07080a; overflow: hidden; }
+  .term-bar { display: flex; align-items: center; gap: 7px; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  .term-bar > i { width: 10px; height: 10px; border-radius: 50%; background: #2a2d35; }
+  .term-bar em { margin-left: 6px; font: 500 11.5px/1 var(--mono); font-style: normal; color: var(--dim); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .term-bar button { font: 500 11.5px/1 var(--mono); color: var(--muted); background: transparent; border: 1px solid var(--line-2); border-radius: 6px; padding: 6px 9px; cursor: pointer; }
+  .term-bar button:hover { color: var(--text); border-color: var(--text); }
+  .term-out { margin: 0; padding: 14px 16px 16px; min-height: 236px; font: 400 13px/1.7 var(--mono); color: var(--soft); white-space: pre-wrap; word-break: break-word; }
+  .tl .tg { color: var(--cyan); }
+  .tl .tg.prompt { color: var(--yellow); }
+  .tl.cur::after { content: "▍"; color: var(--cyan); animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .principles { list-style: none; padding: 0; margin: 64px 0 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; counter-reset: p; }
+  @media (max-width: 1080px) { .principles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .principles { grid-template-columns: 1fr; } }
+  .principles li { counter-increment: p; padding: 18px; border-radius: 14px; border: 1px solid var(--line); background: rgba(11, 12, 15, .5); }
+  .principles li::before { content: "0" counter(p); display: block; margin-bottom: 10px; font: 500 11.5px/1 var(--mono); color: var(--cyan); letter-spacing: .1em; }
+  .principles b { display: block; font-stretch: 110%; font-size: 17px; line-height: 1.25; }
+  .principles span { display: block; margin-top: 6px; color: var(--muted); font-size: 14.5px; line-height: 1.45; }
+  .sub { margin: 80px 0 0; font-stretch: 115%; font-weight: 800; font-size: clamp(24px, 2.6vw, 32px); }
+  .projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+  @media (max-width: 1000px) { .projects { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 640px) { .projects { grid-template-columns: 1fr; } }
+  .proj { display: flex; flex-direction: column; padding: 24px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--panel); transition: border-color .3s, transform .3s; }
+  .proj:hover { border-color: rgba(95, 224, 255, .35); transform: translateY(-3px); }
+  .proj-ic { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: rgba(95, 224, 255, .1); color: var(--cyan); }
+  .proj-ic svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .proj h4 { margin: 18px 0 8px; font-stretch: 112%; font-size: 19px; line-height: 1.25; }
+  .proj p { margin: 0; color: var(--soft); font-size: 15px; line-height: 1.55; }
+  .tags { list-style: none; padding: 0; margin: auto 0 0; padding-top: 18px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .tags li { padding: 5px 9px; border-radius: 99px; border: 1px solid var(--line-2); font: 500 11px/1 var(--mono); color: var(--muted); }
+  .proj.work .proj-ic { background: rgba(255, 201, 51, .12); color: var(--yellow); }
+
+  /* toolkit: a periodic table */
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 44px; }
+  .filters button {
+    display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 99px; cursor: pointer;
+    font: 500 13px/1 var(--mono); color: var(--muted); background: transparent; border: 1px solid var(--line-2); transition: color .2s, border-color .2s, background .2s;
+  }
+  .filters button i { width: 9px; height: 9px; border-radius: 3px; background: var(--c, var(--text)); }
+  .filters button[aria-pressed="true"] { color: var(--text); border-color: var(--text); background: rgba(255, 255, 255, .06); }
+  .el-detail {
+    display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 22px; align-items: center; margin-top: 18px; padding: 20px 22px;
+    min-height: 128px; border-radius: var(--radius); border: 1px solid var(--line-2); background: var(--panel);
+  }
+  .ed-sym {
+    width: 88px; height: 88px; border-radius: 14px; display: grid; place-items: center; position: relative;
+    font-stretch: 115%; font-weight: 800; font-size: 34px; color: var(--bg); background: var(--c, var(--yellow)); transition: background .3s;
+  }
+  .ed-sym small { position: absolute; top: 7px; left: 9px; font: 700 11px/1 var(--mono); opacity: .7; }
+  .ed-cat { margin: 0; font: 500 11.5px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--c, var(--yellow)); }
+  .el-detail h3 { margin: 8px 0 6px; font-stretch: 110%; font-size: 22px; }
+  .el-detail p.ed-d { margin: 0; color: var(--soft); font-size: 15.5px; line-height: 1.5; }
+  .ptable { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 8px; margin-top: 16px; }
+  @media (min-width: 1100px) { .ptable { grid-template-columns: repeat(12, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .ptable { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; } }
+  .el {
+    position: relative; aspect-ratio: 1 / 1.05; padding: 8px 8px 7px; text-align: left; cursor: pointer; overflow: hidden;
+    display: flex; flex-direction: column; justify-content: space-between; font: inherit; color: var(--text);
+    border-radius: 12px; border: 1px solid var(--line-2); background: var(--panel);
+    border-color: color-mix(in srgb, var(--c) 34%, transparent); background: color-mix(in srgb, var(--c) 9%, var(--panel));
+    transition: transform .2s, opacity .3s, border-color .2s, background .2s, filter .3s;
+  }
+  .el .n { font: 500 10px/1 var(--mono); color: var(--muted); }
+  .el .sym { font-stretch: 112%; font-weight: 800; font-size: clamp(20px, 2.2vw, 26px); line-height: 1; color: var(--c); }
+  .el .nm { font-size: 10.5px; line-height: 1.2; color: var(--soft); overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .el:hover, .el:focus-visible, .el.sel { transform: translateY(-3px); border-color: var(--c); background: var(--panel-2); background: color-mix(in srgb, var(--c) 18%, var(--panel)); }
+  .el.dim { opacity: .16; filter: grayscale(1); }
+  [data-cat="lean"] { --c: var(--yellow); }
+  [data-cat="lead"] { --c: var(--coral); }
+  [data-cat="code"] { --c: var(--cyan); }
+  [data-cat="ai"] { --c: var(--violet); }
+  @media (max-width: 560px) { .el .nm { font-size: 9.5px; } .el-detail { grid-template-columns: 1fr; } .ed-sym { width: 70px; height: 70px; font-size: 28px; } }
+
+  /* education */
+  .creds { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 16px; margin-top: 48px; }
+  @media (max-width: 1000px) { .creds { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .creds { grid-template-columns: 1fr; } }
+  .cred { padding: 24px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--panel); }
+  .cred .m-tag { display: block; margin-bottom: 14px; }
+  .cred h3 { font-stretch: 112%; font-size: 21px; }
+  .cred p { margin: 8px 0 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
+  .cred.big h3 { font-size: 24px; }
+  .cred.big .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; padding: 0; list-style: none; }
+  .cred.big .chips li { padding: 6px 10px; border-radius: 99px; background: rgba(255, 255, 255, .05); border: 1px solid var(--line); font-size: 13px; color: var(--soft); }
+
+  /* contact */
+  .contact { padding-bottom: 48px; overflow: hidden; }
+  .giant { max-width: 13ch; font-size: clamp(46px, 9vw, 132px); line-height: .92; font-stretch: 125%; }
+  .giant em { color: var(--yellow); font-style: italic; }
+  .mail-line { margin: 28px 0 0; font: 500 clamp(15px, 1.6vw, 18px)/1.4 var(--mono); color: var(--muted); }
+  .mail-line b { color: var(--text); font-weight: 500; }
+  .foot { display: flex; flex-wrap: wrap; gap: 10px 28px; justify-content: space-between; margin-top: clamp(80px, 10vw, 140px); padding-top: 24px; border-top: 1px solid var(--line); color: var(--dim); font-size: 14px; }
+  kbd { font: 500 12px/1 var(--mono); padding: 3px 6px; border: 1px solid var(--line-2); border-radius: 5px; color: var(--muted); }
+
+  /* quick-jump menu */
+  #palette {
+    width: min(560px, calc(100vw - 32px)); padding: 0; margin: 14vh auto auto; border: 1px solid var(--line-2); border-radius: 16px;
+    background: #12151b; color: var(--text); box-shadow: 0 40px 120px rgba(0, 0, 0, .7);
+  }
+  #palette::backdrop { background: rgba(5, 6, 8, .6); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+  #pq { width: 100%; padding: 18px 20px; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--text); font: 500 16px var(--sans); outline: none; }
+  #pl { list-style: none; margin: 0; padding: 8px; max-height: 52vh; overflow: auto; }
+  #pl li { display: flex; justify-content: space-between; gap: 12px; padding: 11px 12px; border-radius: 10px; cursor: pointer; color: var(--soft); font-size: 15px; }
+  #pl li small { font: 500 11px/1.9 var(--mono); color: var(--dim); text-transform: uppercase; letter-spacing: .1em; }
+  #pl li.on { background: rgba(255, 201, 51, .12); color: var(--text); }
+  #pl li.on small { color: var(--yellow); }
+  .p-foot { margin: 0; padding: 10px 16px; border-top: 1px solid var(--line); font: 500 11.5px/1 var(--mono); color: var(--dim); }
+  .toast {
+    position: fixed; left: 50%; bottom: 28px; z-index: 70; transform: translate(-50%, 20px); opacity: 0; pointer-events: none;
+    padding: 12px 18px; border-radius: 99px; background: var(--yellow); color: #0b0c0f; font-weight: 700; font-size: 14.5px; transition: opacity .25s, transform .25s;
+  }
+  .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; transition-delay: 0s !important; }
+    .ticker-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; }
+    .ticker-track [aria-hidden="true"] { display: none; }
+  }
+
+  /* print: a clean one-page-style résumé from the same content */
+  @media print {
+    @page { margin: 12mm 13mm; }
+    :root { --text: #111; --soft: #222; --muted: #444; --dim: #555; --yellow: #111; --cyan: #111; --line: #ccc; --line-2: #bbb; --panel: #fff; --panel-2: #fff; }
+    *, *::before, *::after { transition: none !important; animation: none !important; box-shadow: none !important; }
+    body { background: #fff; color: #111; font-size: 9.6pt; line-height: 1.38; }
+    .sub { margin: 8pt 0 4pt; font-size: 11pt; font-stretch: 100%; }
+    .el, .el.sel, .el:hover, .el:focus-visible { background: none !important; border: 0 !important; transform: none !important; }
+    body::before, .nav, .takt, .hero, .ticker, .viz, .harness, .filters, .el-detail, .contact .hero-cta, .foot, #palette, .toast, .principles, .stream::before, .node, .proj-ic, .tags, .sub-note { display: none !important; }
+    .print-only { display: block !important; }
+    .js .reveal { opacity: 1 !important; transform: none !important; }
+    section { padding: 8pt 0 2pt; border: 0 !important; background: none !important; }
+    .wrap { max-width: none; padding: 0; }
+    .kicker { color: #111; font-size: 8pt; letter-spacing: .14em; }
+    .kicker::after { background: #999; }
+    h2 { font-size: 13pt; margin: 4pt 0 6pt; max-width: none; font-stretch: 100%; letter-spacing: 0; }
+    h2 .alt, .intro { display: none; }
+    .print-head { margin: 0 0 6pt; padding-bottom: 6pt; border-bottom: 1.5pt solid #111; }
+    .print-head h1 { margin: 0; font-size: 22pt; font-stretch: 115%; letter-spacing: -.01em; }
+    .print-head p { margin: 2pt 0 0; }
+    .print-head .ph-sum { margin-top: 5pt; color: #222; }
+    .metrics, .wins, .projects, .creds { display: block; margin: 0; }
+    .metric { display: block; min-height: 0; padding: 0; border: 0; background: none; margin: 0 0 2pt; }
+    .metric .m-tag, .metric .m-big, .metric .m-cap { display: inline; font-size: 9.6pt; margin: 0; letter-spacing: 0; font-stretch: 100%; font-weight: 400; color: #111; }
+    .metric .m-big { font-weight: 700; } .metric .m-big .from { display: inline; font: inherit; font-weight: 400; text-transform: none; letter-spacing: 0; color: #111; margin: 0 4pt 0 0; }
+    .metric .m-tag::after { content: ": "; } .metric .m-big::after { content: " "; }
+    .wins { columns: 2; } .wins li { padding: 0 0 2pt; border: 0; background: none; display: list-item; list-style: disc inside; font-size: 9.2pt; }
+    .cred.big h3 { font-size: 9.8pt; }
+    .wins li::before { display: none; }
+    .stream { margin: 0; } .role { padding: 0; margin: 0 0 5pt; break-inside: avoid; }
+    .role-card { display: block; padding: 0; border: 0; background: none; }
+    .when { margin: 0; font-size: 8.5pt; } .now-tag { display: none; }
+    .role h3 { font-size: 10.5pt; display: inline; } .org { display: inline; margin: 0 0 0 4pt; color: #111; font-size: 9.6pt; }
+    .pts { margin-top: 2pt; font-size: 9.2pt; } .pts li { padding: 0 0 1pt 10pt; } .pts li::before { background: #111; width: 5pt; top: .65em; }
+    .pts.two { columns: 1; }
+    .proj { display: block; padding: 0; border: 0; background: none; margin: 0 0 3pt; break-inside: avoid; }
+    .proj h4 { display: inline; margin: 0; font-size: 9.8pt; } .proj h4::after { content: ": "; } .proj p { display: inline; font-size: 9.2pt; }
+    .ptable { display: block; margin: 0; }
+    .el { display: inline; padding: 0; border: 0; background: none; aspect-ratio: auto; color: #111; }
+    .el .n, .el .sym { display: none; } .el .nm { display: inline; font-size: 9.2pt; color: #111; -webkit-line-clamp: unset; }
+    .el:not(:last-child) .nm::after { content: " · "; }
+    .el.dim { opacity: 1; filter: none; }
+    .cred { display: block; padding: 0; border: 0; background: none; margin: 0 0 3pt; }
+    .cred .m-tag { display: inline; margin: 0; } .cred .m-tag::after { content: ": "; }
+    .cred h3 { display: inline; font-size: 9.8pt; } .cred p { display: inline; margin: 0 0 0 4pt; font-size: 9.2pt; }
+    .cred.big .chips { display: none; }
+    .contact { display: none; }
+    a { text-decoration: none; }
+  }
 </style>
 </head>
 <body>
-  <p class="site">josephjackman.com</p>
-  <main class="games">
-    <section class="card alt">
-      <div class="hero" aria-hidden="true"><span>🙀</span><span>❓</span><span>⭐</span></div>
-      <h1>Alt Whisker Wars</h1>
-      <p class="tag">Real-time cat kingdom battles with hidden armies: you can't see what's inside enemy buildings, so spy, guess and keep your army's morale up.</p>
-      <a class="play" href="altwhiskerwars/">Play now</a>
-      <ul>
-        <li><b>12 cat heroes</b>, each with 4 skills you level up with fish</li>
-        <li><b>Purr Power</b> morale that makes or breaks your army</li>
-        <li><b>Interactive tutorial</b> to learn it in one battle</li>
+<div class="takt" aria-hidden="true"><i></i></div>
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Joe Jackman, back to top"><span class="badge" aria-hidden="true">JJ</span><span class="brand-name">Joe Jackman</span></a>
+  <nav aria-label="Sections">
+    <a href="#impact">Impact</a>
+    <a href="#experience">Experience</a>
+    <a href="#ai">AI systems</a>
+    <a href="#toolkit">Toolkit</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="kbd-btn" id="paletteBtn" type="button" aria-label="Open the quick-jump menu"><span id="kbdHint">Ctrl K</span></button>
+    <button class="btn btn-sm js-print" type="button">Résumé PDF</button>
+  </div>
+</header>
+
+<main>
+  <!-- print-only header for "Save résumé as PDF" -->
+  <div class="print-only print-head">
+    <h1>Joe Jackman</h1>
+    <p><b>Business Growth Executive · Lean Six Sigma Black Belt · AI Systems Designer</b></p>
+    <p>Chicago, IL · <span class="js-email">jjackman1377 [at] gmail.com</span> · josephjackman.com</p>
+    <p class="ph-sum">Business growth executive who develops teams that build company-wide systems and operational excellence, with clear roadmaps and a drive to bring out the best in every member of the team. Lean Six Sigma Black Belt, practiced in most Lean Six Sigma and continuous-improvement methods, and a builder of AI systems with the specs, guardrails and checks that make them dependable.</p>
+  </div>
+
+  <section class="hero" id="top" aria-label="Introduction">
+    <canvas id="flow" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <p class="eyebrow"><span class="live" aria-hidden="true"></span>Now · Director of Pricing &amp; Procurement, Marketing Impact Limited</p>
+      <h1 class="display"><span class="l1">Joe Jackman</span> <span class="l2">turns chaos into <em>flow.</em></span></h1>
+      <p class="lede">I'm a business growth executive and Lean Six Sigma Black Belt. I find the bottleneck, build the system around it, and develop the team that runs it. Lately that system has AI in the loop, wired with the specs, guardrails and checks that make it trustworthy.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#impact">See the results <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+        <a class="btn-ghost" href="#ai">How I build with AI</a>
+      </div>
+      <aside class="sigma" aria-label="Process sigma meter for the animation behind this section">
+        <div class="sigma-top"><span>PROCESS σ</span><b id="gateCount">0/5 GATES</b></div>
+        <div class="sigma-value"><span id="sigmaVal">1.5</span><small>σ</small></div>
+        <div class="sigma-row"><span>Defects / million</span><span id="dpmoVal">500,000</span></div>
+        <div class="sigma-row"><span>Yield</span><span id="yieldVal">50.0%</span></div>
+        <p class="sigma-hint" id="sigmaHint">Scroll to run the improvement. Move your cursor through the line to add special-cause variation.</p>
+      </aside>
+    </div>
+  </section>
+
+  <div class="ticker" role="region" aria-label="Where I've worked">
+    <div class="ticker-track">
+      <span>Marketing Impact Limited</span><span>Colorado Industrial Packaging</span><span>H2 Solutions</span><span>Manufacturer's Edge</span><span>Knowles</span><span>Compex</span><span>Aspenti Health</span>
+      <span aria-hidden="true">Marketing Impact Limited</span><span aria-hidden="true">Colorado Industrial Packaging</span><span aria-hidden="true">H2 Solutions</span><span aria-hidden="true">Manufacturer's Edge</span><span aria-hidden="true">Knowles</span><span aria-hidden="true">Compex</span><span aria-hidden="true">Aspenti Health</span>
+    </div>
+  </div>
+
+  <section id="impact" aria-labelledby="impact-h">
+    <div class="wrap">
+      <p class="kicker">01 · Impact</p>
+      <h2 id="impact-h">Results you can measure.</h2>
+      <p class="intro">Continuous improvement only counts when it shows up in the numbers: faster quotes, more output, deliveries that arrive when promised, and businesses that make money.</p>
+
+      <div class="metrics">
+        <article class="metric reveal">
+          <span class="m-tag">Colorado Industrial Packaging</span>
+          <div class="m-big"><span class="from">Was 2 hours</span>10 min</div>
+          <p class="m-cap">Average quote time, cut by 92%</p>
+          <div class="viz" aria-hidden="true">
+            <div class="bar before"><em>Before · 120 min</em><span style="--w:100%"></span></div>
+            <div class="bar after"><em>After · 10 min</em><span style="--w:8.3%"></span></div>
+          </div>
+        </article>
+        <article class="metric reveal">
+          <span class="m-tag">Colorado Industrial Packaging</span>
+          <div class="m-big"><span class="from">Doubled</span>2×</div>
+          <p class="m-cap">Production output, up 100%</p>
+          <div class="viz" aria-hidden="true">
+            <div class="cols"><i style="--h:36%"></i><i style="--h:41%"></i><i style="--h:34%"></i><i style="--h:39%"></i><i style="--h:37%"></i><i class="up" style="--h:70%"></i><i class="up" style="--h:78%"></i><i class="up" style="--h:74%"></i><i class="up" style="--h:81%"></i><i class="up" style="--h:77%"></i></div>
+            <div class="cols-legend"><span>Before</span><span>After</span></div>
+          </div>
+        </article>
+        <article class="metric reveal">
+          <span class="m-tag">Colorado Industrial Packaging</span>
+          <div class="m-big"><span class="from">Was under 50%</span>95%+</div>
+          <p class="m-cap">On-time delivery</p>
+          <div class="viz gauge" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><circle class="g-bg" cx="60" cy="60" r="46"/><circle class="g-fg" cx="60" cy="60" r="46"/></svg>
+            <div class="gauge-num"><span data-count="95" data-from="48">48</span>%<small>orders shipped<br>on time</small></div>
+          </div>
+        </article>
+        <article class="metric reveal">
+          <span class="m-tag">H2 Solutions</span>
+          <div class="m-big"><span class="from">Profitable in</span>3 mo</div>
+          <p class="m-cap">To make an acquired electronics company profitable</p>
+          <div class="viz spark" aria-hidden="true">
+            <svg viewBox="0 0 240 96">
+              <defs><linearGradient id="profitGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff7a5c"/><stop offset=".45" stop-color="#ffc933"/><stop offset="1" stop-color="#74e6a6"/></linearGradient></defs>
+              <line class="be" x1="0" y1="52" x2="240" y2="52"/>
+              <text x="0" y="46">break-even</text>
+              <path class="ln" d="M2,84 C34,88 58,80 84,66 S136,40 166,30 S214,14 238,10"/>
+              <text x="0" y="96">month 0</text><text x="190" y="96">month 3</text>
+            </svg>
+          </div>
+        </article>
+      </div>
+
+      <ul class="wins">
+        <li class="reveal">Company-wide workflows digitized, with paper-based processes eliminated</li>
+        <li class="reveal">Every order quantity suggested automatically</li>
+        <li class="reveal">True margin and efficiency by person, area and part</li>
+        <li class="reveal">Sales quotes every common item on site</li>
+        <li class="reveal">A fully automated management dashboard</li>
+        <li class="reveal">Production auto-prioritized on every department's screens</li>
+        <li class="reveal">A national story about my program as COVID hit</li>
+        <li class="reveal">A 5-Star COVID response program for Denver and Boulder clients</li>
       </ul>
-    </section>
-    <section class="card hive">
-      <div class="hero" aria-hidden="true"><span>🐝</span><span>🍯</span><span>🌌</span></div>
-      <h1>The Infinite Hive</h1>
-      <p class="tag">An incremental game. Grow one backyard hive into a swarm that covers the Earth, then the galaxy.</p>
-      <a class="play" href="infinitehive/">Play now</a>
-      <ul>
-        <li><b>Three phases</b>: backyard, planet, galaxy</li>
-        <li><b>Real-time space battles</b>, a casino and a stock exchange</li>
-        <li><b>Saves in your browser</b>, no sign-up</li>
-      </ul>
-    </section>
-    <section class="card race">
-      <div class="hero" aria-hidden="true"><span>🏇</span><span>🪙</span><span>💥</span></div>
-      <h1>Horse Race</h1>
-      <p class="tag">A silly betting party game. Back ridiculous horses with your friends, then dish out penalties when you win.</p>
-      <a class="play" href="horserace/">Play now</a>
-      <ul>
-        <li><b>Online with friends</b>: share a 5-number code, no sign-up</li>
-        <li><b>200 silly horse names</b>, and the first to pick one can rename it</li>
-        <li><b>Boosts, setbacks</b> and penalty attacks</li>
-      </ul>
-    </section>
-    <section class="card deck">
-      <div class="hero" aria-hidden="true"><span>🃏</span><span>🍻</span><span>🎉</span></div>
-      <h1>The Deck</h1>
-      <p class="tag">A drinking card game for parties. Draw cards on your own phone, then show them, pass them on or keep them.</p>
-      <a class="play" href="thedeck/">Play now</a>
-      <ul>
-        <li><b>Online with friends</b>: share a 5-number code, no sign-up</li>
-        <li><b>Play cards any time</b>, even when it isn't your turn</li>
-        <li><b>The host picks</b> which cards are in</li>
-      </ul>
-    </section>
-    <section class="card lie">
-      <div class="hero" aria-hidden="true"><span>🤥</span><span>📺</span><span>🔍</span></div>
-      <h1>Lieage</h1>
-      <p class="tag">A bluffing trivia party game. Put it on a big screen, write believable lies on your phone, and try to spot the strange-but-true answer.</p>
-      <a class="play" href="lieage/">Play now</a>
-      <ul>
-        <li><b>The big screen is the game</b>, everyone plays on their phone</li>
-        <li><b>480 real but strange facts</b> in eight categories</li>
-        <li><b>2 to 10 players</b>: share a 5-number code, no sign-up</li>
-      </ul>
-    </section>
-    <section class="card rp20">
-      <div class="hero" aria-hidden="true"><span>🐉</span><span>🎲</span><span>📜</span></div>
-      <h1>Roleplay20</h1>
-      <p class="tag">Dungeons &amp; Dragons with Claude as your Dungeon Master. A private table for our group: password and invite only.</p>
-      <a class="play" href="roleplay20/">Enter the tavern</a>
-      <ul>
-        <li><b>An AI Dungeon Master</b> that narrates, voices every NPC and runs the monsters</li>
-        <li><b>Battle maps with fog of war</b>: you only see what your character can see</li>
-        <li><b>Character sheets that roll</b>, track your spells and level up</li>
-      </ul>
-    </section>
-  </main>
-  <footer>Play in any desktop or phone browser</footer>
+    </div>
+  </section>
+
+  <section id="experience" aria-labelledby="exp-h">
+    <div class="wrap">
+      <p class="kicker">02 · Experience</p>
+      <h2 id="exp-h">A decade of turning operations into systems.</h2>
+      <p class="intro">Every stop added a capability: lab automation, engineering, consulting, delivery, operations and executive leadership. Read it like a value stream, newest first.</p>
+
+      <ol class="stream">
+        <li class="role now reveal">
+          <span class="node" aria-hidden="true"></span>
+          <div class="role-card">
+            <header>
+              <p class="when">Apr 2025 – Present <span class="now-tag">NOW</span></p>
+              <h3>Director of Pricing and Procurement</h3>
+              <p class="org">Marketing Impact Limited <span>· Toronto, ON</span></p>
+            </header>
+            <ul class="pts two">
+              <li>Identified the company's weaknesses and built the CEO's roadmap to its five-year goals</li>
+              <li>Manage a team of direct reports and am building a new culture across the executive team that supports growth and collaboration</li>
+              <li>Led the initiative to digitize company-wide workflows and eliminate paper-based processes</li>
+              <li>Automated ordering so every order quantity is suggested automatically</li>
+              <li>Implemented labor tracking by person, area and part to show actual margin and efficiency</li>
+              <li>Spearheaded the new NCR process and its data tracking</li>
+              <li>Serve as the company's implementation and sustainability expert on every major project</li>
+              <li>Working with the AI team on automatic quality lead generation, connection-point identification and profiling</li>
+              <li>Orchestrated an online platform that lets sales quote every common item on site</li>
+              <li>Integrated an acquisition into our standard software and inventory systems</li>
+              <li>Handle building automation and IT development since the CEO stepped fully into acquisitions</li>
+            </ul>
+          </div>
+        </li>
+        <li class="role reveal">
+          <span class="node" aria-hidden="true"></span>
+          <div class="role-card">
+            <header>
+              <p class="when">Oct 2022 – Jul 2025</p>
+              <h3>Continuous Improvement and Operations Manager</h3>
+              <p class="org">Colorado Industrial Packaging <span>· Denver, CO</span></p>
+            </header>
+            <ul class="pts">
+              <li>Cut average quote time from 2 hours to 10 minutes</li>
+              <li>Increased production output by 100%</li>
+              <li>Raised on-time delivery from below 50% to 95%+</li>
+              <li>Stabilized the workforce</li>
+              <li>Built training material for roles across the business</li>
+              <li>Built a fully automated management dashboard</li>
+              <li>Took over day-to-day operations as the CEO stepped fully into sales</li>
+            </ul>
+          </div>
+        </li>
+        <li class="role reveal">
+          <span class="node" aria-hidden="true"></span>
+          <div class="role-card">
+            <header>
+              <p class="when">Dec 2019 – Oct 2022</p>
+              <h3>Director of Delivery</h3>
+              <p class="org">H2 Solutions <span>· Longmont, CO</span></p>
+            </header>
+            <ul class="pts">
+              <li>Created the 5-Star COVID response program with clients across Denver and Boulder, Colorado</li>
+              <li>Developed a workforce solution that lets small businesses with variable demand share employees</li>
+              <li>Bought an electronics company and made it profitable in three months</li>
+              <li>Created a suite of automation products that help small businesses excel</li>
+            </ul>
+          </div>
+        </li>
+        <li class="role reveal">
+          <span class="node" aria-hidden="true"></span>
+          <div class="role-card">
+            <header>
+              <p class="when">Sep 2018 – Apr 2020</p>
+              <h3>Continuous Improvement Consultant</h3>
+              <p class="org">Manufacturer's Edge <span>· Denver, CO</span></p>
+            </header>
+            <ul class="pts">
+              <li>Worked with the MEP (Manufacturing Extension Partnership) as a delivery consultant</li>
+              <li>Created new programs for the MEP to deliver</li>
+              <li>Had a national story written about the success of my program as COVID hit</li>
+              <li>Delivered many rollouts solo</li>
+            </ul>
+          </div>
+        </li>
+        <li class="role reveal">
+          <span class="node" aria-hidden="true"></span>
+          <div class="role-card">
+            <header>
+              <p class="when">Feb 2018 – Aug 2018</p>
+              <h3>Continuous Improvement Engineer</h3>
+              <p class="org">Knowles <span>· Cazenovia, NY</span></p>
+            </header>
+            <ul class="pts">
+              <li>Led a team of industrial engineers on company-wide improvements</li>
+              <li>Created a SQL tool that auto-prioritizes production, running in every department on screens driven by Raspberry Pis</li>
+              <li>Created a camaraderie-based culture system that reduced turnover and improved morale and productivity</li>
+            </ul>
+          </div>
+        </li>
+        <li class="role reveal">
+          <span class="node" aria-hidden="true"></span>
+          <div class="role-card">
+            <header>
+              <p class="when">Oct 2017 – Feb 2018</p>
+              <h3>Photolithographer / Continuous Improvement Engineer</h3>
+              <p class="org">Compex, acquired by Knowles <span>· Providence, RI</span></p>
+            </header>
+            <ul class="pts">
+              <li>Automated systems using database-driven algorithms</li>
+              <li>Introduced new automated machinery</li>
+              <li>Created an automated inventory system for repurchasing supplies</li>
+            </ul>
+          </div>
+        </li>
+        <li class="role reveal">
+          <span class="node" aria-hidden="true"></span>
+          <div class="role-card">
+            <header>
+              <p class="when">Apr 2016 – Aug 2017</p>
+              <h3>Lead Automation Technician and Laboratory Scientist</h3>
+              <p class="org">Aspenti Health <span>· Burlington, VT</span></p>
+            </header>
+            <ul class="pts">
+              <li>Managed technicians through company changes, including layoffs and a buyout</li>
+              <li>Produced new programs that made the work easier and raised total throughput</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="ai" class="ai" aria-labelledby="ai-h">
+    <div class="wrap">
+      <p class="kicker">03 · AI design &amp; harness infrastructure</p>
+      <h2 id="ai-h">The model is the engine. <span class="cy">I build the harness.</span></h2>
+      <p class="intro">Anyone can call a model. Making it dependable is the work: written specs it builds against, hooks that run around every step, guardrails that fail closed, checks that gate each phase, budgets it can't exceed, and a person who signs off. It's the same discipline as standard work and poka-yoke, applied to AI.</p>
+
+      <div class="harness">
+        <div class="diagram reveal">
+          <svg id="harnessSvg" viewBox="0 0 520 520" role="group" aria-label="Harness diagram. Choose a part to read about it.">
+            <defs>
+              <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#5fe0ff" stop-opacity=".28"/><stop offset="1" stop-color="#5fe0ff" stop-opacity="0"/></radialGradient>
+              <path id="ringPath" d="M 260,260 m -238,0 a 238,238 0 1,1 476,0 a 238,238 0 1,1 -476,0"/>
+            </defs>
+            <circle class="ring-outer" cx="260" cy="260" r="238"/>
+            <g class="ring-text" aria-hidden="true"><text><textPath href="#ringPath">HUMAN IN THE LOOP · OWNER SIGNS OFF · HUMAN IN THE LOOP · OWNER SIGNS OFF · HUMAN IN THE LOOP · OWNER SIGNS OFF ·</textPath></text></g>
+            <circle class="ring" cx="260" cy="260" r="190"/>
+            <g aria-hidden="true">
+              <line class="spoke" data-for="specs" x1="260" y1="260" x2="260" y2="70"/>
+              <line class="spoke" data-for="hooks" x1="260" y1="260" x2="424.5" y2="165"/>
+              <line class="spoke" data-for="guard" x1="260" y1="260" x2="424.5" y2="355"/>
+              <line class="spoke" data-for="verify" x1="260" y1="260" x2="260" y2="450"/>
+              <line class="spoke" data-for="budget" x1="260" y1="260" x2="95.5" y2="355"/>
+              <line class="spoke" data-for="context" x1="260" y1="260" x2="95.5" y2="165"/>
+            </g>
+            <circle cx="260" cy="260" r="130" fill="url(#coreGlow)" aria-hidden="true"/>
+            <g class="hnode core" data-id="model" tabindex="0" role="button" aria-label="Model"><circle cx="260" cy="260" r="64"/><text x="260" y="257">MODEL</text><text class="sm" x="260" y="277">SWAPPABLE</text></g>
+            <g class="hnode" data-id="specs" tabindex="0" role="button" aria-label="Specs"><circle cx="260" cy="70" r="46"/><text x="260" y="68">SPECS</text><text class="sm" x="260" y="86">01</text></g>
+            <g class="hnode" data-id="hooks" tabindex="0" role="button" aria-label="Hooks"><circle cx="424.5" cy="165" r="46"/><text x="424.5" y="163">HOOKS</text><text class="sm" x="424.5" y="181">02</text></g>
+            <g class="hnode" data-id="guard" tabindex="0" role="button" aria-label="Guardrails"><circle cx="424.5" cy="355" r="46"/><text x="424.5" y="353" style="font-size:10px">GUARDRAILS</text><text class="sm" x="424.5" y="371">03</text></g>
+            <g class="hnode" data-id="verify" tabindex="0" role="button" aria-label="Checks"><circle cx="260" cy="450" r="46"/><text x="260" y="448">CHECKS</text><text class="sm" x="260" y="466">04</text></g>
+            <g class="hnode" data-id="budget" tabindex="0" role="button" aria-label="Budget"><circle cx="95.5" cy="355" r="46"/><text x="95.5" y="353">BUDGET</text><text class="sm" x="95.5" y="371">05</text></g>
+            <g class="hnode" data-id="context" tabindex="0" role="button" aria-label="Context"><circle cx="95.5" cy="165" r="46"/><text x="95.5" y="163">CONTEXT</text><text class="sm" x="95.5" y="181">06</text></g>
+            <circle id="packet" r="5" cx="260" cy="260" aria-hidden="true"/>
+          </svg>
+        </div>
+        <div class="harness-side">
+          <div class="detail reveal" id="hDetail" aria-live="polite">
+            <p class="d-k">01 · Specs</p>
+            <h3>Specs before code</h3>
+            <p>Every build starts as a written spec: the architecture, a phase table and acceptance checks. The model builds one phase at a time, lists every manual step for the owner, and stops for sign-off before the next.</p>
+            <p class="d-ex"><b>In practice:</b> a 16-phase app blueprint run one <code>/phase</code> command at a time.</p>
+          </div>
+          <div class="term reveal">
+            <div class="term-bar"><i></i><i></i><i></i><em>harness.log · an illustrative run</em><button type="button" id="replay">Replay</button></div>
+            <div class="term-out" id="termOut" role="log" aria-label="Illustrative harness run"></div>
+          </div>
+        </div>
+      </div>
+
+      <ol class="principles">
+        <li class="reveal"><b>AI proposes, people decide</b><span>The model makes pending suggestions. Nothing changes without an accept.</span></li>
+        <li class="reveal"><b>Fail closed</b><span>An error, a timeout or low confidence means "hold it back."</span></li>
+        <li class="reveal"><b>Minimum context</b><span>Send only what the moment needs. Private stays private.</span></li>
+        <li class="reveal"><b>Hard money limits</b><span>Reserve the worst case before a call, settle the actual after.</span></li>
+        <li class="reveal"><b>Write every decision down</b><span>A decision log and a progress checklist let any session pick up cleanly.</span></li>
+      </ol>
+
+      <h3 class="sub">Systems I've built</h3>
+      <div class="projects">
+        <article class="proj reveal">
+          <div class="proj-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><path d="M12 7l4.3 7.5H7.7z"/><path d="M12 2.5V7M3.8 7.25l3.9 7.25M20.2 7.25l-3.9 7.25M7.7 14.5L12 21.5l4.3-7"/></svg></div>
+          <h4>An AI Dungeon Master</h4>
+          <p>Runs a full multiplayer Dungeons &amp; Dragons table: writes the world, keeps the DM's secrets hidden, voices every NPC and narrates one shared story. A rules engine, not the model, owns the dice and the stats. Players say what they do, and every change to a character goes through the DM.</p>
+          <ul class="tags"><li>Hidden state</li><li>Rules engine</li><li>Structured outputs</li></ul>
+        </article>
+        <article class="proj reveal">
+          <div class="proj-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <h4>A private inbox assistant</h4>
+          <p>Triages email and drafts replies in my own voice. Sensitive mail is classified on my own machine and never uploaded, every upload is signed, and a read-only gateway lets an assistant search without being able to send. Only one button sends, and a person presses it.</p>
+          <ul class="tags"><li>Local-first</li><li>Fail closed</li><li>MCP gateway</li></ul>
+        </article>
+        <article class="proj reveal">
+          <div class="proj-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg></div>
+          <h4>An AI goal coach</h4>
+          <p>Turns a three-to-five-year goal into small daily experiments. The AI proposes and the user accepts. Providers sit behind one interface, model choice is data rather than code, and the worst-case cost is reserved before every call, so it can never spend more than the user paid for.</p>
+          <ul class="tags"><li>Multi-provider</li><li>Credit ledger</li><li>Evals</li></ul>
+        </article>
+        <article class="proj reveal">
+          <div class="proj-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v5h-5"/></svg></div>
+          <h4>A self-updating AI playbook</h4>
+          <p>A daily agent compares the official model and tooling docs with yesterday's copy using plain code, and only wakes a model when something changed. A prompt hook puts the resulting best-practices log in front of each working session once a day.</p>
+          <ul class="tags"><li>Scheduled agent</li><li>Hooks</li><li>Near-zero cost</li></ul>
+        </article>
+        <article class="proj reveal">
+          <div class="proj-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17.5l9 5 9-5"/></svg></div>
+          <h4>Autonomous, spec-driven builds</h4>
+          <p>Multi-week software builds run by AI agents from a build brief, a progress checklist and a decision log. They commit at every milestone and run tests on every push, and a new session picks up from the first unchecked item.</p>
+          <ul class="tags"><li>Build specs</li><li>Skills</li><li>CI gates</li></ul>
+        </article>
+        <article class="proj work reveal">
+          <div class="proj-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/></svg></div>
+          <h4>AI at work</h4>
+          <p>At Marketing Impact, working with the AI team on automatic quality lead generation, connection-point identification and profiling, alongside the automation that suggests every order quantity.</p>
+          <ul class="tags"><li>Lead generation</li><li>Profiling</li><li>Automation</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="toolkit" aria-labelledby="tk-h">
+    <div class="wrap">
+      <p class="kicker">04 · Toolkit</p>
+      <h2 id="tk-h">The periodic table of how I work.</h2>
+      <p class="intro">Methods, leadership, code and AI. Hover or tap an element to read it.</p>
+      <div class="filters" role="toolbar" aria-label="Filter the toolkit">
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="lean" data-cat="lean" aria-pressed="false"><i></i>Lean &amp; CI</button>
+        <button type="button" data-f="lead" data-cat="lead" aria-pressed="false"><i></i>Leadership</button>
+        <button type="button" data-f="code" data-cat="code" aria-pressed="false"><i></i>Automation &amp; code</button>
+        <button type="button" data-f="ai" data-cat="ai" aria-pressed="false"><i></i>AI systems</button>
+      </div>
+      <div class="el-detail" id="elDetail" data-cat="lean" aria-live="polite">
+        <div class="ed-sym"><small id="edN">1</small><span id="edS">Bb</span></div>
+        <div><p class="ed-cat" id="edC">Lean &amp; continuous improvement</p><h3 id="edT">Lean Six Sigma Black Belt</h3><p class="ed-d" id="edD">Certified. DMAIC, statistics and change management at the project-lead level.</p></div>
+      </div>
+      <div class="ptable" id="ptable">
+        <button type="button" class="el" data-cat="lean" data-d="Certified. DMAIC, statistics and change management at the project-lead level."><span class="n">1</span><span class="sym">Bb</span><span class="nm">Lean Six Sigma Black Belt</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Small improvements, every day, made by the people who do the work."><span class="n">2</span><span class="sym">Kz</span><span class="nm">Kaizen</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Pull-based flow with visible limits on work in progress."><span class="n">3</span><span class="sym">Kb</span><span class="nm">Kanban</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Improvement and coaching routines that turn experiments into habits."><span class="n">4</span><span class="sym">Kt</span><span class="nm">Kata</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Total productive maintenance: operators and maintenance keep machines available together."><span class="n">5</span><span class="sym">Tp</span><span class="nm">TPM</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="One page: the problem, the root cause, the countermeasures and the follow-up."><span class="n">6</span><span class="sym">A3</span><span class="nm">A3</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Single-minute exchange of die: changeovers in minutes, not hours."><span class="n">7</span><span class="sym">Sm</span><span class="nm">SMED</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Make what's needed, when it's needed, in the amount needed."><span class="n">8</span><span class="sym">Jt</span><span class="nm">Just in Time</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Strategy deployment: a few breakthrough goals, cascaded to everyone."><span class="n">9</span><span class="sym">Hp</span><span class="nm">Hoshin Planning</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Status anyone can read from across the room."><span class="n">10</span><span class="sym">Vw</span><span class="nm">Visual Workplace</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Training Within Industry: Job Relations, Job Instructions and Job Methods."><span class="n">11</span><span class="sym">Tw</span><span class="nm">TWI</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Five whys, fishbones and data until the real cause is found."><span class="n">12</span><span class="sym">Rc</span><span class="nm">Root Cause Analysis</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Find the constraint first. Improving anything else is a distraction."><span class="n">13</span><span class="sym">Bn</span><span class="nm">Bottleneck Identification</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Measure the work, then take the waste out of it."><span class="n">14</span><span class="sym">Ea</span><span class="nm">Efficiency Analysis</span></button>
+        <button type="button" class="el" data-cat="lean" data-d="Nonconformance reports with the data tracking that stops repeat problems."><span class="n">15</span><span class="sym">Nc</span><span class="nm">NCR Process</span></button>
+        <button type="button" class="el" data-cat="lead" data-d="Building teams that create company-wide systems and run them without me in the room."><span class="n">16</span><span class="sym">Td</span><span class="nm">Team Development</span></button>
+        <button type="button" class="el" data-cat="lead" data-d="Getting past friction to the real problem, and keeping people together while you fix it."><span class="n">17</span><span class="sym">Cm</span><span class="nm">Conflict Management</span></button>
+        <button type="button" class="el" data-cat="lead" data-d="Building the team on purpose, including the hard calls."><span class="n">18</span><span class="sym">Hf</span><span class="nm">Hiring and Firing</span></button>
+        <button type="button" class="el" data-cat="lead" data-d="Training material for roles across the business, so knowledge doesn't live in one head."><span class="n">19</span><span class="sym">Tr</span><span class="nm">Training Programs</span></button>
+        <button type="button" class="el" data-cat="lead" data-d="Camaraderie-based culture systems that cut turnover and raise morale and productivity."><span class="n">20</span><span class="sym">Cu</span><span class="nm">Culture Building</span></button>
+        <button type="button" class="el" data-cat="lead" data-d="Creative and analytical thinking: new ideas, tested against the data."><span class="n">21</span><span class="sym">Ca</span><span class="nm">Creative &amp; Analytical Thinking</span></button>
+        <button type="button" class="el" data-cat="lead" data-d="Leadership, service and finishing what I start, learned early."><span class="n">22</span><span class="sym">Es</span><span class="nm">Eagle Scout</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Ordering, quoting, scheduling and reporting that run themselves."><span class="n">23</span><span class="sym">Oa</span><span class="nm">Operational Automation</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Quoting platforms and pipelines that let sales spend time selling."><span class="n">24</span><span class="sym">Sa</span><span class="nm">Sales Automation</span></button>
+        <button type="button" class="el" data-cat="code" data-d="No-code glue between the tools a business already uses."><span class="n">25</span><span class="sym">Zp</span><span class="nm">Zapier</span></button>
+        <button type="button" class="el" data-cat="code" data-d="From auto-prioritized production to margin by person, area and part."><span class="n">26</span><span class="sym">Sq</span><span class="nm">SQL</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Scripts, data work and automation."><span class="n">27</span><span class="sym">Py</span><span class="nm">Python</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Web apps, real-time multiplayer games and this page."><span class="n">28</span><span class="sym">Js</span><span class="nm">JavaScript</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Automation across Google Workspace."><span class="n">29</span><span class="sym">Gs</span><span class="nm">Google Apps Script</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Statistics and analysis."><span class="n">30</span><span class="sym">R</span><span class="nm">R</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Application development."><span class="n">31</span><span class="sym">C#</span><span class="nm">C#</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Application development."><span class="n">32</span><span class="sym">Jv</span><span class="nm">Java</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Fast numerical computing."><span class="n">33</span><span class="sym">Jl</span><span class="nm">Julia</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Excel and Office automation."><span class="n">34</span><span class="sym">Vb</span><span class="nm">VBA</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Websites and web front ends."><span class="n">35</span><span class="sym">Ht</span><span class="nm">HTML</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Internal tools and products, from idea to rollout."><span class="n">36</span><span class="sym">Ad</span><span class="nm">Application Development</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Sites like this one."><span class="n">37</span><span class="sym">Wd</span><span class="nm">Website Development</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Exemplary use of Microsoft Office and Google Workspace."><span class="n">38</span><span class="sym">Of</span><span class="nm">Office &amp; Google Workspace</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Fully automated management dashboards: the numbers update themselves."><span class="n">39</span><span class="sym">Db</span><span class="nm">Dashboards</span></button>
+        <button type="button" class="el" data-cat="code" data-d="Shop-floor screens on Raspberry Pis that show every department what to make next."><span class="n">40</span><span class="sym">Rp</span><span class="nm">Raspberry Pi</span></button>
+        <button type="button" class="el" data-cat="ai" data-d="Everything around the model that makes it safe, cheap and useful: specs, hooks, guardrails, checks, budgets and sign-off."><span class="n">41</span><span class="sym">Hs</span><span class="nm">Harness Design</span></button>
+        <button type="button" class="el" data-cat="ai" data-d="Architecture, phase tables and acceptance checks written before any code."><span class="n">42</span><span class="sym">Sp</span><span class="nm">Spec-Driven Builds</span></button>
+        <button type="button" class="el" data-cat="ai" data-d="Programs that run on every prompt or tool call to check, block or remind."><span class="n">43</span><span class="sym">Hk</span><span class="nm">Hooks &amp; Gates</span></button>
+        <button type="button" class="el" data-cat="ai" data-d="Fail-closed classification, untrusted content kept as data, and a person on every send."><span class="n">44</span><span class="sym">Gr</span><span class="nm">Guardrails</span></button>
+        <button type="button" class="el" data-cat="ai" data-d="Scheduled and long-running agents that keep a progress checklist and a decision log."><span class="n">45</span><span class="sym">Ag</span><span class="nm">Agents</span></button>
+        <button type="button" class="el" data-cat="ai" data-d="Model Context Protocol connections, including a read-only gateway."><span class="n">46</span><span class="sym">Mc</span><span class="nm">MCP Integrations</span></button>
+        <button type="button" class="el" data-cat="ai" data-d="Tests, milestone checks and evals that gate every phase."><span class="n">47</span><span class="sym">Ev</span><span class="nm">Evals &amp; Verification</span></button>
+        <button type="button" class="el" data-cat="ai" data-d="Reserve-then-settle budgets, the right effort level per job, and no model call when nothing changed."><span class="n">48</span><span class="sym">$c</span><span class="nm">Cost Controls</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" aria-labelledby="ed-h">
+    <div class="wrap">
+      <p class="kicker">05 · Education &amp; credentials</p>
+      <h2 id="ed-h">Trained as a scientist. <span class="alt">Certified in improvement.</span></h2>
+      <div class="creds">
+        <article class="cred big reveal">
+          <span class="m-tag">Education</span>
+          <h3>University of Vermont</h3>
+          <p>Molecular Genetics · Burlington, VT</p>
+          <ul class="chips" aria-label="Coursework"><li>Bioinformatics</li><li>Computer Programming</li><li>Statistics</li><li>Pharmacology</li><li>Recombinant DNA Lab</li><li>Emergency Medical Research</li></ul>
+        </article>
+        <article class="cred reveal">
+          <span class="m-tag">Certification</span>
+          <h3>Lean Six Sigma Black Belt</h3>
+          <p>Practiced in most Lean Six Sigma and continuous-improvement methods.</p>
+        </article>
+        <article class="cred reveal">
+          <span class="m-tag">Scouting</span>
+          <h3>Eagle Scout</h3>
+          <p>Leadership and service, learned early.</p>
+        </article>
+        <article class="cred reveal">
+          <span class="m-tag">Languages</span>
+          <h3>Spanish</h3>
+          <p>Partial proficiency.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="ct-h">
+    <div class="wrap">
+      <p class="kicker">06 · Contact</p>
+      <h2 class="giant" id="ct-h">Let's find your <em>bottleneck.</em></h2>
+      <p class="intro">Based in Chicago, IL. Happy to talk operations, growth and putting AI to work inside a company.</p>
+      <div class="hero-cta">
+        <a class="btn js-mail" href="#contact">Email Joe <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <button class="btn-ghost" type="button" id="copyBtn">Copy email</button>
+        <button class="btn-ghost js-print" type="button">Save résumé as PDF</button>
+      </div>
+      <p class="mail-line"><b class="js-email">jjackman1377 [at] gmail.com</b> · Chicago, IL</p>
+    </div>
+    <footer class="wrap foot">
+      <span>© 2026 Joe Jackman</span>
+      <span>Press <kbd>/</kbd> to jump anywhere</span>
+    </footer>
+  </section>
+</main>
+
+<dialog id="palette" aria-label="Quick-jump menu">
+  <input id="pq" type="text" placeholder="Jump to a section or run a command" autocomplete="off" spellcheck="false" aria-controls="pl">
+  <ul id="pl" role="listbox" aria-label="Commands"></ul>
+  <p class="p-foot">↑ ↓ to move · Enter to run · Esc to close</p>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  'use strict';
+  const $ = (s, el = document) => el.querySelector(s);
+  const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const go = (sel) => { const el = $(sel); if (el) el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' }); };
+
+  // ---------- email (assembled here so it isn't sitting in the page source for scrapers)
+  const EMAIL = ['jjackman1377', 'gmail.com'].join('@');
+  $$('.js-email').forEach((el) => { el.textContent = EMAIL; });
+  $$('.js-mail').forEach((a) => { a.href = 'mailto:' + EMAIL; });
+  const toastEl = $('#toast');
+  let toastTimer = 0;
+  const toast = (msg) => { toastEl.textContent = msg; toastEl.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => toastEl.classList.remove('show'), 1800); };
+  const copyEmail = () => {
+    const done = () => toast('Email copied: ' + EMAIL);
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(EMAIL).then(done, () => prompt('Copy this email address:', EMAIL));
+    else prompt('Copy this email address:', EMAIL);
+  };
+  $('#copyBtn').addEventListener('click', copyEmail);
+  $$('.js-print').forEach((b) => b.addEventListener('click', () => window.print()));
+  if (matchMedia('(pointer: coarse)').matches) $('#kbdHint').textContent = 'Menu';
+  else if (/Mac/.test(navigator.platform || navigator.userAgent)) $('#kbdHint').textContent = '⌘K';
+
+  // ---------- nav state, takt bar (scroll progress), active section
+  const nav = $('#nav');
+  const takt = $('.takt i');
+  const onScroll = () => {
+    const y = window.scrollY;
+    nav.classList.toggle('scrolled', y > 24);
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    takt.style.transform = 'scaleX(' + (max > 0 ? clamp(y / max, 0, 1) : 0) + ')';
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const links = $$('.nav nav a');
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) links.forEach((a) => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id)); });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  links.forEach((a) => { const s = $(a.getAttribute('href')); if (s) spy.observe(s); });
+  spy.observe($('#top'));
+  spy.observe($('#education'));
+
+  // ---------- reveal on scroll, and counters
+  const reveal = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      reveal.unobserve(e.target);
+      $$('[data-count]', e.target).forEach(countUp);
+    });
+  }, { threshold: 0.18 });
+  $$('.reveal').forEach((el) => reveal.observe(el));
+  function countUp(el) {
+    const from = +el.dataset.from || 0, to = +el.dataset.count, t0 = performance.now(), dur = reduce ? 1 : 1800;
+    const tick = (now) => {
+      const t = clamp((now - t0 - 300) / dur, 0, 1), e = 1 - Math.pow(1 - t, 3);
+      el.textContent = Math.round(from + (to - from) * e);
+      if (t < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  // ---------- hero: a value stream that goes from chaos to flow through five DMAIC gates
+  let improve = () => {};
+  (function flow() {
+    const canvas = $('#flow'), hero = $('#top');
+    const ctx = canvas.getContext('2d');
+    const sigEl = $('#sigmaVal'), dpmoEl = $('#dpmoVal'), yieldEl = $('#yieldVal'), hintEl = $('#sigmaHint'), gateEl = $('#gateCount');
+    const GATES = ['DEFINE', 'MEASURE', 'ANALYZE', 'IMPROVE', 'CONTROL'];
+    let W = 0, H = 0, parts = [], order = 0, target = 0, raf = 0, last = 0, lastRead = 0, onScreen = true, hintStage = -1;
+    const mouse = { x: -9999, y: -9999 };
+    const gx = (i) => W * (0.2 + i * 0.155);
+    const gauss = () => { let u = 0, v = 0; while (!u) u = Math.random(); while (!v) v = Math.random(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
+    const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
+    // Normal tail probability, accurate to ~1e-7 relative error (Numerical Recipes erfc), for DPMO.
+    const erfc = (x) => { const z = Math.abs(x), t = 1 / (1 + 0.5 * z);
+      const r = t * Math.exp(-z * z - 1.26551223 + t * (1.00002368 + t * (0.37409196 + t * (0.09678418 + t * (-0.18628806 + t * (0.27886807 + t * (-1.13520398 + t * (1.48851587 + t * (-0.82215223 + t * 0.17087277)))))))));
+      return x >= 0 ? r : 2 - r; };
+    const tail = (z) => 0.5 * erfc(z / Math.SQRT2);
+    const make = (x) => ({ x, n: clamp(gauss(), -2.6, 2.6), ph: Math.random() * 6.283, sp: 0.55 + Math.random() * 0.9, k: 0, px: x, py: null, ai: Math.random() < 0.1 });
+    function spread(x) {
+      let s = 1;
+      for (let i = 0; i < 5; i++) s *= 1 - 0.43 * order * smooth(gx(i) - W * 0.035, gx(i) + W * 0.035, x);
+      return H * 0.3 * s;
+    }
+    function resize() {
+      const r = canvas.getBoundingClientRect();
+      W = r.width; H = r.height;
+      const d = Math.min(2, window.devicePixelRatio || 1);
+      canvas.width = Math.round(W * d); canvas.height = Math.round(H * d);
+      ctx.setTransform(d, 0, 0, d, 0, 0);
+      const n = Math.round(clamp((W * H) / 4200, 90, 320));
+      parts = Array.from({ length: n }, () => make(Math.random() * W));
+      ctx.fillStyle = '#0b0c0f'; ctx.fillRect(0, 0, W, H);
+    }
+    function readout() {
+      const z = 1.5 + 4.5 * order;
+      const dp = tail(z - 1.5) * 1e6;
+      sigEl.textContent = z.toFixed(1);
+      dpmoEl.textContent = dp < 10 ? dp.toFixed(1) : Math.round(dp).toLocaleString('en-US');
+      yieldEl.textContent = (100 - dp / 1e4).toFixed(dp < 10 ? 5 : dp < 1000 ? 3 : dp < 1e5 ? 2 : 1) + '%';
+      const passed = GATES.filter((_, i) => order > (i + 1) / 5 - 0.04).length;
+      gateEl.textContent = passed + '/5 GATES';
+      const stage = order > 0.97 ? 2 : order > 0.3 ? 1 : 0;
+      if (stage !== hintStage) {
+        hintStage = stage;
+        hintEl.textContent = stage === 2 ? 'Control phase: the gains hold. Move your cursor through the line and watch it recover.'
+          : stage === 1 ? 'Improving. Each gate squeezes out variation as you scroll.'
+          : 'Scroll to run the improvement. Move your cursor through the line to add special-cause variation.';
+      }
+    }
+    function draw(now) {
+      const dt = clamp((now - last) / 16.7, 0, 3);
+      last = now;
+      order += (target - order) * Math.min(1, 0.03 * dt);
+      ctx.globalCompositeOperation = 'source-over';
+      ctx.fillStyle = 'rgba(11, 12, 15, 0.18)';
+      ctx.fillRect(0, 0, W, H);
+      const mid = H * (W > 1080 ? 0.42 : 0.5), lim = H * 0.085, endGate = gx(4);
+      // gates
+      ctx.font = '500 11px "JetBrains Mono", monospace';
+      ctx.textAlign = 'center';
+      for (let i = 0; i < 5; i++) {
+        const on = order > (i + 1) / 5 - 0.04;
+        ctx.strokeStyle = on ? 'rgba(255, 201, 51, 0.32)' : 'rgba(236, 233, 224, 0.08)';
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(gx(i), 78); ctx.lineTo(gx(i), H - 40); ctx.stroke();
+        ctx.fillStyle = on ? 'rgba(255, 201, 51, 0.95)' : 'rgba(236, 233, 224, 0.32)';
+        ctx.fillText((i + 1) + ' ' + (W < 700 ? GATES[i][0] : GATES[i]), gx(i), 96);
+      }
+      // spec limits after the last gate
+      ctx.setLineDash([4, 6]);
+      ctx.strokeStyle = 'rgba(255, 122, 92, 0.4)';
+      ctx.beginPath(); ctx.moveTo(endGate, mid - lim); ctx.lineTo(W, mid - lim); ctx.moveTo(endGate, mid + lim); ctx.lineTo(W, mid + lim); ctx.stroke();
+      ctx.setLineDash([]);
+      const speed = 1.2 + order * 2.2;
+      ctx.globalCompositeOperation = 'lighter';
+      ctx.lineCap = 'round';
+      for (const p of parts) {
+        p.x += p.sp * speed * dt;
+        p.ph += 0.05 * dt;
+        if (p.x > W + 20) { Object.assign(p, make(-20)); continue; }
+        const s = spread(p.x);
+        let y = mid + p.n * s + Math.sin(p.ph) * 16 * (s / (H * 0.3)) * (1 - order * 0.9);
+        const dx = p.x - mouse.x, dy = y - mouse.y, d = Math.sqrt(dx * dx + dy * dy);
+        if (d < 110) p.k += (dy >= 0 ? 1 : -1) * (1 - d / 110) * 9 * dt;
+        p.k *= Math.pow(0.9, dt);
+        y += p.k;
+        const out = p.x > endGate && Math.abs(y - mid) > lim;
+        const t = smooth(gx(0), endGate, p.x);
+        ctx.strokeStyle = out ? 'rgba(255, 122, 92, 0.95)' : p.ai ? 'rgba(95, 224, 255, ' + (0.45 + t * 0.5) + ')' : 'rgba(' + Math.round(236 + 19 * t) + ',' + Math.round(234 - 33 * t) + ',' + Math.round(227 - 176 * t) + ',' + (0.35 + t * 0.6) + ')';
+        ctx.lineWidth = out ? 2.2 : 1.6;
+        const len = p.sp * speed * 7;
+        ctx.beginPath(); ctx.moveTo(p.x - len, p.py === null ? y : p.py); ctx.lineTo(p.x, y); ctx.stroke();
+        p.px = p.x; p.py = y;
+      }
+      ctx.globalCompositeOperation = 'source-over';
+      if (now - lastRead > 110) { lastRead = now; readout(); }
+    }
+    function loop(now) {
+      draw(now);
+      raf = onScreen && !document.hidden ? requestAnimationFrame(loop) : 0;
+    }
+    const start = () => { if (!raf && !reduce) { last = performance.now(); raf = requestAnimationFrame(loop); } };
+    const progress = () => {
+      const p = clamp(window.scrollY / (hero.offsetHeight * 0.7), 0, 1);
+      target = Math.max(target, 0.3 + 0.7 * p); // gains are held (the control phase), so scrolling back doesn't undo them
+    };
+    improve = () => { target = 1; start(); };
+    resize();
+    if (reduce) {
+      order = target = 1;
+      for (let i = 0; i < 160; i++) draw(i * 16.7);
+      readout();
+      hintEl.textContent = 'Control phase: the gains hold.';
+      return;
+    }
+    setTimeout(() => { target = Math.max(target, 0.3); }, 500);
+    progress();
+    addEventListener('scroll', progress, { passive: true });
+    let rt = 0;
+    addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(resize, 150); });
+    hero.addEventListener('pointermove', (e) => { const r = canvas.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
+    hero.addEventListener('pointerleave', () => { mouse.x = mouse.y = -9999; });
+    new IntersectionObserver(([e]) => { onScreen = e.isIntersecting; if (onScreen) start(); }).observe(hero);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) start(); });
+    start();
+  })();
+
+  // ---------- harness diagram, synced to an illustrative run in the terminal
+  let replayRun = () => {};
+  (function harness() {
+    const svg = $('#harnessSvg');
+    const nodes = $$('.hnode', svg), spokes = $$('.spoke', svg), ring = $('.ring-text', svg), packet = $('#packet');
+    const detail = $('#hDetail'), out = $('#termOut');
+    const INFO = {
+      model: ['Core', 'A swappable engine', 'The model does the reasoning, and nothing else is hard-wired to it. Providers sit behind one interface, model choice is data rather than code, and each job gets the effort level it needs.', 'one internal interface with adapters per provider, and a model catalog instead of hard-coded names.'],
+      specs: ['01 · Specs', 'Specs before code', 'Every build starts as a written spec: the architecture, a phase table and acceptance checks. The model builds one phase at a time, lists every manual step for the owner, and stops for sign-off before the next.', 'a 16-phase app blueprint run one <code>/phase</code> command at a time.'],
+      hooks: ['02 · Hooks', 'Hooks around every step', 'Small programs run on each prompt or tool call. One checks a daily best-practices log and flags a cheaper or newer method before work starts. Another blocks any attempt to read private data, so the model never wanders into it.', 'a prompt hook that costs nothing once a session has been checked that day.'],
+      guard: ['03 · Guardrails', 'Fail closed', "When a classifier errors, times out or isn't sure, the answer is “hold it back.” Sensitive email is classified on the machine and never leaves it. The model drafts; only a person's click sends.", 'medical, legal, financial and security mail stays local, and no draft is ever written for it.'],
+      verify: ['04 · Checks', 'Checks gate every phase', 'Tests, lint and milestone checks run before anything ships. Long builds keep a progress checklist and a decision log, so a fresh session picks up exactly where the last one stopped.', 'tests on every push, and a phase is marked done only after the owner signs off.'],
+      budget: ['05 · Budget', 'Hard money limits', 'Before any model call, reserve the most it could cost; settle the actual afterward; never exceed what was paid for. Routine monitoring runs as plain code and only wakes a model when something changed.', 'a credit ledger that reserves first, and a daily agent that costs nothing on quiet days.'],
+      context: ['06 · Context', 'Minimum context', 'Send only what the moment needs. Notes are opt-in, private projects send nothing, names are pseudonymized, and untrusted content is fenced off as data, never as instructions.', 'email and documents go to the model as clearly marked data, and drafting calls get no tools.'],
+      human: ['The loop', 'A person signs off', 'The outer ring is the point of the whole design: AI proposes, people decide. Nothing reaches a customer, a codebase or an inbox without an accept.', 'owner sign-off at the end of every phase, and a Send button only a person can press.'],
+    };
+    const RUN = [
+      ['$', 'harness run --phase 4', null],
+      ['spec', 'BUILD_SPEC.md · phase 4 of 16 · scope locked', 'specs'],
+      ['context', '3 docs loaded · private data excluded', 'context'],
+      ['hook', 'best-practices gate · 1 cheaper method flagged', 'hooks'],
+      ['model', 'plan drafted · waiting for owner approval', 'model'],
+      ['guard', 'classifier unsure · held back (fail closed)', 'guard'],
+      ['budget', 'reserved $0.042 · settled $0.031', 'budget'],
+      ['verify', 'tests passed · lint clean', 'verify'],
+      ['human', 'owner signed off ✓ · phase 4 done', 'human'],
+    ];
+    const pos = (id) => { const c = $('.hnode[data-id="' + id + '"] circle', svg); return c ? [+c.getAttribute('cx'), +c.getAttribute('cy')] : [260, 260]; };
+    let packetAnim = 0;
+    function shoot(id) {
+      if (reduce || id === 'model' || id === 'human') return;
+      const [x0, y0] = pos(id), t0 = performance.now();
+      cancelAnimationFrame(packetAnim);
+      const step = (now) => {
+        const t = clamp((now - t0) / 650, 0, 1), e = t * t * (3 - 2 * t);
+        packet.setAttribute('cx', x0 + (260 - x0) * e); packet.setAttribute('cy', y0 + (260 - y0) * e);
+        packet.style.opacity = t < 1 ? 1 : 0;
+        if (t < 1) packetAnim = requestAnimationFrame(step);
+      };
+      packetAnim = requestAnimationFrame(step);
+    }
+    function select(id) {
+      nodes.forEach((n) => n.classList.toggle('on', n.dataset.id === id));
+      spokes.forEach((s) => s.classList.toggle('on', s.dataset.for === id));
+      ring.classList.toggle('on', id === 'human');
+      const [k, t, b, ex] = INFO[id];
+      detail.innerHTML = '<p class="d-k">' + k + '</p><h3>' + t + '</h3><p>' + b + '</p><p class="d-ex"><b>In practice:</b> ' + ex + '</p>';
+      shoot(id);
+    }
+    let timer = 0, auto = true, line = 0, visible = false;
+    function next() {
+      if (!auto || !visible) return;
+      const prev = $('.tl.cur', out); if (prev) prev.classList.remove('cur');
+      if (line >= RUN.length) { timer = setTimeout(play, 6000); return; }
+      const [tag, text, id] = RUN[line];
+      const row = document.createElement('div');
+      row.className = 'tl cur';
+      const tg = document.createElement('span');
+      tg.className = 'tg' + (tag === '$' ? ' prompt' : '');
+      tg.textContent = tag === '$' ? '$ ' : '› ' + tag.padEnd(8, ' ');
+      const tx = document.createElement('span');
+      row.append(tg, tx);
+      out.append(row);
+      if (id) select(id);
+      let i = 0;
+      const type = () => {
+        if (!auto) return;
+        i = reduce ? text.length : i + 1;
+        tx.textContent = text.slice(0, i);
+        if (i < text.length) timer = setTimeout(type, 15);
+        else { line++; timer = setTimeout(next, reduce ? 30 : 700); }
+      };
+      type();
+    }
+    function play() { clearTimeout(timer); auto = true; line = 0; out.textContent = ''; next(); }
+    replayRun = () => { visible = true; play(); };
+    $('#replay').addEventListener('click', replayRun);
+    nodes.forEach((n) => {
+      const pick = () => { auto = false; clearTimeout(timer); const c = $('.tl.cur', out); if (c) c.classList.remove('cur'); select(n.dataset.id); };
+      n.addEventListener('click', pick);
+      n.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); } });
+    });
+    new IntersectionObserver(([e]) => {
+      const was = visible;
+      visible = e.isIntersecting;
+      if (visible && !was && auto) play();
+      if (!visible) clearTimeout(timer);
+    }, { threshold: 0.25 }).observe(out);
+  })();
+
+  // ---------- periodic table
+  (function table() {
+    const els = $$('.el'), det = $('#elDetail'), filters = $$('.filters button');
+    const CAT = { lean: 'Lean & continuous improvement', lead: 'Leadership', code: 'Automation & code', ai: 'AI systems' };
+    const show = (el) => {
+      els.forEach((e) => e.classList.toggle('sel', e === el));
+      det.dataset.cat = el.dataset.cat;
+      $('#edN').textContent = $('.n', el).textContent;
+      $('#edS').textContent = $('.sym', el).textContent;
+      $('#edC').textContent = CAT[el.dataset.cat];
+      $('#edT').textContent = $('.nm', el).textContent;
+      $('#edD').textContent = el.dataset.d;
+    };
+    els.forEach((el) => {
+      el.addEventListener('mouseenter', () => show(el));
+      el.addEventListener('focus', () => show(el));
+      el.addEventListener('click', () => show(el));
+    });
+    filters.forEach((b) => b.addEventListener('click', () => {
+      const f = b.dataset.f;
+      filters.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      els.forEach((e) => e.classList.toggle('dim', f !== 'all' && e.dataset.cat !== f));
+      const first = els.find((e) => f === 'all' || e.dataset.cat === f);
+      if (first) show(first);
+    }));
+    show(els[0]);
+  })();
+
+  // ---------- quick-jump menu: press / or Ctrl+K (⌘K on a Mac)
+  (function palette() {
+    const dlg = $('#palette'), q = $('#pq'), list = $('#pl');
+    if (!dlg || typeof dlg.showModal !== 'function') { $('#paletteBtn').hidden = true; return; }
+    const CMDS = [
+      ['Impact', 'section', () => go('#impact')],
+      ['Experience', 'section', () => go('#experience')],
+      ['AI design & harness infrastructure', 'section', () => go('#ai')],
+      ['Toolkit', 'section', () => go('#toolkit')],
+      ['Education & credentials', 'section', () => go('#education')],
+      ['Contact', 'section', () => go('#contact')],
+      ['Back to the top', 'section', () => go('#top')],
+      ['Run the process improvement', 'demo', () => { go('#top'); improve(); }],
+      ['Replay the harness run', 'demo', () => { go('#ai'); setTimeout(replayRun, 500); }],
+      ['Copy email address', 'action', copyEmail],
+      ['Email Joe', 'action', () => { location.href = 'mailto:' + EMAIL; }],
+      ['Save résumé as PDF', 'action', () => setTimeout(() => window.print(), 150)],
+    ];
+    let shown = CMDS, sel = 0;
+    const draw = () => {
+      list.textContent = '';
+      shown.forEach((c, i) => {
+        const li = document.createElement('li');
+        li.setAttribute('role', 'option');
+        li.setAttribute('aria-selected', String(i === sel));
+        li.className = i === sel ? 'on' : '';
+        li.innerHTML = '<span></span><small></small>';
+        li.firstChild.textContent = c[0];
+        li.lastChild.textContent = c[1];
+        li.addEventListener('click', () => run(c));
+        li.addEventListener('mousemove', () => { if (sel !== i) { sel = i; draw(); } });
+        list.append(li);
+      });
+      const on = $('li.on', list); if (on) on.scrollIntoView({ block: 'nearest' });
+    };
+    const open = () => { q.value = ''; shown = CMDS; sel = 0; draw(); dlg.showModal(); q.focus(); };
+    const run = (c) => { dlg.close(); c[2](); };
+    q.addEventListener('input', () => {
+      const s = q.value.trim().toLowerCase();
+      shown = CMDS.filter((c) => (c[0] + ' ' + c[1]).toLowerCase().includes(s));
+      sel = 0; draw();
+    });
+    q.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') { e.preventDefault(); sel = Math.min(sel + 1, shown.length - 1); draw(); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); sel = Math.max(sel - 1, 0); draw(); }
+      else if (e.key === 'Enter' && shown[sel]) { e.preventDefault(); run(shown[sel]); }
+    });
+    document.addEventListener('keydown', (e) => {
+      const typing = /^(INPUT|TEXTAREA|SELECT)$/.test((document.activeElement || {}).tagName || '');
+      if ((e.key.toLowerCase() === 'k' && (e.metaKey || e.ctrlKey)) || (e.key === '/' && !typing && !dlg.open)) {
+        e.preventDefault();
+        if (dlg.open) dlg.close(); else open();
+      }
+    });
+    $('#paletteBtn').addEventListener('click', open);
+    dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+  })();
+})();
+</script>
 </body>
 </html>
