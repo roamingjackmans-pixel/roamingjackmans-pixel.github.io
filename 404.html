@@ -14,9 +14,8 @@
     var first = m ? m[1].toLowerCase() : '';
     if (first === 'whisker-wars') first = 'altwhiskerwars';
     if (moved.indexOf(first) >= 0) location.replace('/games/' + first + (m[2] || '/') + location.search + location.hash);
-    // Cadence is its own repo, served at exactly /Cadence/ (Pages paths are case-sensitive): /cadence/, /CADENCE/ go there.
-    // Never redirect /Cadence/ itself, or a missing file inside it would loop.
-    else if (first === 'cadence' && m[1] !== 'Cadence') location.replace('/Cadence' + (m[2] || '/') + location.search + location.hash);
+    // Cadence moved from /Cadence/ to /games/Cadence/ (Pages paths are case-sensitive, so any casing goes there).
+    else if (first === 'cadence') location.replace('/games/Cadence' + (m[2] || '/') + location.search + location.hash);
   })();
 </script>
 <style>
